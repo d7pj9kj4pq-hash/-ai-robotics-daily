@@ -58,6 +58,20 @@ def main():
     xhs_file = f'output/export/xiaohongshu_{today}.txt'
     with open(xhs_file, 'w', encoding='utf-8') as f:
         f.write(xhs_content)
+
+    # 获取最新图片
+        image_dir = f'output/images/{date}'
+        if os.path.exists(image_dir):
+            # 查找最新的PNG图片
+            import glob
+            image_files = glob.glob(f'{image_dir}/*.png')
+            if image_files:
+                # 取前3张图片
+                for img_idx, img_path in enumerate(image_files[:3], 1):
+                    img_filename = os.path.basename(img_path)
+                    report += f"![AI图片{img_idx}]({img_path})\n\n"
+        else:
+            report += "> 注：图片生成中...\n\n"
     
     print(f"✅ 报告生成成功！")
     print(f"   日报: {report_file}")
