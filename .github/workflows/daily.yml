@@ -1,20 +1,22 @@
-name: 每日AI机器人资讯自动生成
+name: AI日报生成
 
 on:
   schedule:
-    # 每天北京时间9点运行（UTC 1:00）
-    - cron: '0 1 * * *'
-  workflow_dispatch:  # 支持手动触发
+    - cron: '0 1 * * *'  # 每天北京时间9点
+  workflow_dispatch:
 
 jobs:
-  collect-and-generate:
+  build:
     runs-on: ubuntu-latest
     
     steps:
     - name: 检出代码
       uses: actions/checkout@v3
+      with:
+        # 拉取所有分支和历史
+        fetch-depth: 0
     
-    - name: 设置Python环境
+    - name: 设置Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
@@ -22,35 +24,31 @@ jobs:
     - name: 安装依赖
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install requests feedparser pyyaml
     
-    - name: 运行资讯收集和处理
+    - name: 创建必要目录
+      run: |
+        mkdir -p output/daily output/weekly output/images docs/daily
+    
+    - name: 运行新闻收集
+      run: python scripts/news_collector.py
+    
+    - name: 运行AI处理
       env:
         ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
-      run: |
-        python scripts/news_collector.py
-        python scripts/ai_processor.py
-        python scripts/report_generator.py
+      run: python scripts/ai_processor.py
+    
+    - name: 生成报告
+      run: python scripts/report_generator.py
     
     - name: 生成图片
-      run: |
-        python scripts/image_generator.py
+      run: python scripts/image_generator.py || echo "图片生成跳过"
     
-    - name: 提交更改
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # 拉取远程更改，使用rebase避免合并提交
-        git pull origin main --rebase --autostash || echo "拉取失败或无需拉取"
-        
-        # 添加所有文件
-        git add -A
-        
-        # 提交更改，允许空提交
-        git commit -m "🤖 自动更新: $(date '+%Y-%m-%d') AI机器人日报" || echo "无变化"
-        
-        # 推送更改
-        git push origin HEAD:main
+    - name: 自动提交和推送
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "🤖 自动更新: $(date '+%Y-%m-%d') AI机器人日报"
+        commit_options: '--allow-empty'
+        file_pattern: 'output/* docs/*'
+        commit_user_name: 'github-actions[bot]'
+        commit_user_email: 'github-actions[bot]@users.noreply.github.com'
