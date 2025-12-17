@@ -1,0 +1,44 @@
+name: 自动推送辅助
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["AI日报生成"]
+    types:
+      - completed
+
+jobs:
+  push-if-success:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        fetch-depth: 0
+    
+    - name: 同步更改
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 获取最新的更改
+        git fetch origin
+        
+        # 重置到最新的远程分支
+        git reset --hard origin/main
+        
+        # 添加所有更改
+        git add -A
+        
+        # 如果有更改就提交
+        if git diff-index --quiet HEAD --; then
+          echo "没有更改可提交"
+        else
+          git commit -m "📦 自动同步: $(date '+%Y-%m-%d %H:%M')"
+          git push origin main
+        fi
