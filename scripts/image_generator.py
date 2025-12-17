@@ -1,110 +1,96 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-图片生成脚本（简化版）
-如果环境没有PIL库，这个脚本会跳过
-"""
+# 极简图片生成器
 
 import os
 import json
 from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
 
-def generate_simple_images():
-    """生成简单的图片"""
-    try:
-        # 尝试导入PIL，如果失败就跳过
-        from PIL import Image, ImageDraw, ImageFont
-        has_pil = True
-    except ImportError:
-        print("PIL库未安装，跳过图片生成")
-        has_pil = False
-        return []
-    
-    if not has_pil:
-        return []
-    
+def main():
+    """生成3张简单的图片"""
     today = datetime.now().strftime('%Y-%m-%d')
-    input_file = f'output/daily/processed_{today}.json'
+    image_dir = f'output/images/{today}'
     
-    if not os.path.exists(input_file):
-        print(f"未找到处理后的新闻文件: {input_file}")
-        return []
+    # 创建目录
+    if os.path.exists(image_dir):
+        import shutil
+        shutil.rmtree(image_dir)
     
-    # 读取数据
-    with open(input_file, 'r', encoding='utf-8') as f:
-        news_items = json.load(f)
-    
-    os.makedirs(f'output/images/{today}', exist_ok=True)
+    os.makedirs(image_dir, exist_ok=True)
     
     images_info = []
     
-    # 只处理前3条新闻
-    for i, item in enumerate(news_items[:3]):
+    # 3种不同的颜色
+    colors = [
+        (70, 130, 180),   # 钢蓝色
+        (220, 100, 100),  # 珊瑚红
+        (100, 180, 100)   # 草绿色
+    ]
+    
+    for i in range(1, 4):
         try:
-            # 创建简单图片
-            width, height = 800, 600
-            image = Image.new('RGB', (width, height), color='white')
-            draw = ImageDraw.Draw(image)
+            # 创建图片
+            width, height = 800, 800
+            img = Image.new('RGB', (width, height), color=colors[i-1])
+            draw = ImageDraw.Draw(img)
             
-            # 尝试使用字体
+            # 绘制边框
+            draw.rectangle([(50, 50), (width-50, height-50)], 
+                          outline=(255, 255, 255), width=10)
+            
+            # 绘制圆形
+            circle_size = 200
+            circle_x = width // 2
+            circle_y = height // 2 - 50
+            draw.ellipse([(circle_x-circle_size//2, circle_y-circle_size//2),
+                         (circle_x+circle_size//2, circle_y+circle_size//2)],
+                        outline=(255, 255, 255), width=5)
+            
+            # 绘制AI图标
+            # 三角形
+            triangle_points = [
+                (circle_x, circle_y - 80),
+                (circle_x - 60, circle_y + 40),
+                (circle_x + 60, circle_y + 40)
+            ]
+            draw.polygon(triangle_points, fill=(255, 255, 255))
+            
+            # 添加文字
             try:
-                font = ImageFont.truetype("arial.ttf", 24)
+                font = ImageFont.truetype("Arial", 40)
             except:
                 font = ImageFont.load_default()
             
-            # 绘制标题
-            title = item['title']
-            # 分割长标题
-            lines = []
-            words = title.split()
-            current_line = ""
+            # 编号
+            draw.text((circle_x, circle_y + 120), f"#{i}", 
+                     fill=(255, 255, 255), font=font, anchor="mm")
             
-            for word in words:
-                if len(current_line) + len(word) <= 40:
-                    current_line += word + " "
-                else:
-                    lines.append(current_line)
-                    current_line = word + " "
+            # 日期
+            draw.text((circle_x, height - 100), today, 
+                     fill=(200, 200, 200), font=font, anchor="mm")
             
-            if current_line:
-                lines.append(current_line)
-            
-            # 绘制文本
-            y = 50
-            for line in lines[:4]:  # 最多4行
-                draw.text((50, y), line[:50], font=font, fill='black')
-                y += 40
-            
-            # 绘制分割线
-            draw.line([(50, y+10), (width-50, y+10)], fill='gray', width=2)
-            
-            # 绘制来源和时间
-            source_text = f"来源: {item['source']} | {today}"
-            draw.text((50, y+30), source_text, font=font, fill='blue')
-            
-            # 保存图片
-            filename = f'output/images/{today}/news_{i+1}.png'
-            image.save(filename)
+            # 保存
+            filename = f'{image_dir}/news_{i}.png'
+            img.save(filename)
             
             images_info.append({
-                'title': item['title'],
-                'image_path': filename,
-                'xhs_content': item.get('xhs_content', '')
+                'index': i,
+                'filename': f'news_{i}.png',
+                'path': filename
             })
             
-            print(f"已生成图片: {filename}")
+            print(f"✅ 生成图片: {filename}")
             
         except Exception as e:
-            print(f"生成第{i+1}张图片失败: {e}")
-            continue
+            print(f"❌ 生成图片{i}失败: {e}")
     
     # 保存图片信息
-    if images_info:
-        info_file = f'output/images/{today}/info.json'
-        with open(info_file, 'w', encoding='utf-8') as f:
-            json.dump(images_info, f, ensure_ascii=False, indent=2)
+    info_file = f'{image_dir}/info.json'
+    with open(info_file, 'w', encoding='utf-8') as f:
+        json.dump(images_info, f, ensure_ascii=False, indent=2)
     
+    print(f"🎯 图片生成完成！共 {len(images_info)} 张")
     return images_info
 
 if __name__ == '__main__':
-    generate_simple_images()
+    main()
