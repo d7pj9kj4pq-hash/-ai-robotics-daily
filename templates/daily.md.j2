@@ -1,0 +1,28 @@
+# 🤖 AI与机器人日报 {{ date }}
+
+> 自动生成 | 共 {{ news_items|length }} 条资讯
+
+---
+
+{% for item in news_items %}
+## {{ loop.index }}. {{ item.title }}
+
+**来源**: {{ item.source }}  
+**时间**: {{ item.published }}
+
+**AI摘要**: {{ item.ai_summary }}
+
+**小红书文案**:{{item.xhs_content}}
+
+**原文链接**: [点击查看]({{ item.link }})
+
+---
+{% endfor %}
+
+## 📊 今日统计
+
+- **资讯总数**: {{ news_items|length }} 条
+- **主要来源**: {{ news_items|map(attribute='source')|unique|list|join(', ') }}
+- **生成时间**: {{ now().strftime('%Y-%m-%d %H:%M') }}
+
+> 本报告由自动化系统生成，数据来源于公开科技资讯。
