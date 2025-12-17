@@ -1,0 +1,47 @@
+# 📊 AI与机器人周报 第{{ week_num }}周
+
+**统计周期**: {{ start_date }} 至 {{ end_date }}
+**资讯总数**: {{ total_news }} 条
+
+---
+
+## 📈 本周数据概览
+
+### 资讯来源分布
+{% for source, count in source_stats.items() %}
+- **{{ source }}**: {{ count }} 条
+{% endfor %}
+
+### 热门分类
+- AI大模型: {{ ai_count }} 条
+- 机器人技术: {{ robot_count }} 条
+- 自动驾驶: {{ auto_count }} 条
+- 芯片硬件: {{ chip_count }} 条
+- 其他: {{ other_count }} 条
+
+---
+
+## 🏆 本周热点排行
+
+{% for item in top_news %}
+### {{ loop.index }}. {{ item.title }}
+
+**来源**: {{ item.source }}  
+**热度**: {{ "⭐" * (item.score|int) }}
+
+**摘要**: {{ item.summary[:100] }}...
+
+[查看详情]({{ item.link }})
+
+---
+{% endfor %}
+
+## 🔮 下周趋势预测
+
+基于本周数据分析：
+1. {{ trend1 }}
+2. {{ trend2 }}
+3. {{ trend3 }}
+
+> 生成时间: {{ now().strftime('%Y-%m-%d %H:%M') }}
+> 数据来源: 公开科技资讯聚合
