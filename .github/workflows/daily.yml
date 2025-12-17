@@ -40,6 +40,32 @@ jobs:
     
     - name: 生成报告
       run: python scripts/report_generator.py
+
+    - name: 清理旧图片（强制更新）
+      run: |
+        echo "清理旧的图片缓存..."
+        find output/images -name ".updated" -mtime +0 -exec rm -rf {} \; 2>/dev/null || true
+        echo "清理完成"
+    
+    - name: 生成新图片（V2版本）
+      run: |
+        echo "开始生成新图片..."
+        python scripts/image_generator_v2.py || echo "图片生成失败，跳过"
+        echo "图片生成步骤完成"
+    
+    - name: 验证图片生成
+      run: |
+        echo "验证生成的图片..."
+        today=$(date +%Y-%m-%d)
+        if [ -d "output/images/$today" ]; then
+          echo "✅ 图片目录存在"
+          echo "📁 目录内容:"
+          ls -la "output/images/$today/"
+          echo "📄 文件列表:"
+          find "output/images/$today" -type f
+        else
+          echo "❌ 图片目录不存在"
+        fi
     
     - name: 生成图片
       run: python scripts/image_generator.py || echo "图片生成跳过"
