@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-12-17T15:11:10.083171",
-  "news_count": 7,
+  "last_updated": "2025-12-17T16:32:36.476543",
+  "news_count": 8,
   "news": [
     {
       "title": "官宣！姚顺雨出任腾讯首席AI科学家，带队大语言模型、AI Infra",
@@ -11,7 +11,7 @@
       "published": "Wed, 17 Dec 2025 17:28:00 +0800",
       "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2025-12-17T15:11:10.082443"
+      "collected_at": "2025-12-17T16:32:36.475854"
     },
     {
       "title": "爱诗科技与阿里云达成全栈AI合作 AI视频全球化再启航",
@@ -22,7 +22,7 @@
       "published": "Wed, 17 Dec 2025 15:31:00 +0800",
       "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2025-12-17T15:11:10.082460"
+      "collected_at": "2025-12-17T16:32:36.475869"
     },
     {
       "title": "人车家全生态持续破圈，小米宣布对开发者开放小米MiMo大模型、CarIoT硬件生态",
@@ -33,7 +33,18 @@
       "published": "Wed, 17 Dec 2025 14:43:56 +0800",
       "category": "芯片硬件",
       "quality_score": 4,
-      "collected_at": "2025-12-17T15:11:10.082466"
+      "collected_at": "2025-12-17T16:32:36.475874"
+    },
+    {
+      "title": "大模型的进化方向：Words to Worlds | 对话商汤林达华",
+      "summary": "原生多模态架构起作用了",
+      "raw_summary": "原生多模态架构起作用了",
+      "link": "https://www.qbitai.com/2025/12/361575.html",
+      "source": "量子位",
+      "published": "Wed, 17 Dec 2025 15:17:15 +0000",
+      "category": "大模型",
+      "quality_score": 4,
+      "collected_at": "2025-12-17T16:32:36.475881"
     },
     {
       "title": "ChatGPT文风，原产地肯尼亚",
@@ -44,7 +55,7 @@
       "published": "Wed, 17 Dec 2025 08:10:11 +0000",
       "category": "大模型",
       "quality_score": 3,
-      "collected_at": "2025-12-17T15:11:10.082473"
+      "collected_at": "2025-12-17T16:32:36.475887"
     },
     {
       "title": "是个公司都在用AI Agent，但大家真的用明白了吗| MEET2026圆桌论坛",
@@ -55,7 +66,7 @@
       "published": "Wed, 17 Dec 2025 05:10:56 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2025-12-17T15:11:10.082479"
+      "collected_at": "2025-12-17T16:32:36.475893"
     },
     {
       "title": "大厂竞逐，健康AI率先跑出一个阿福",
@@ -66,7 +77,7 @@
       "published": "Wed, 17 Dec 2025 16:00:00 +0800",
       "category": "医疗健康",
       "quality_score": 2,
-      "collected_at": "2025-12-17T15:11:10.082488"
+      "collected_at": "2025-12-17T16:32:36.475902"
     },
     {
       "title": "对话理想范皓宇、陈伟：1699元的AI眼镜，要成为理想汽车的最强辅件",
@@ -77,13 +88,13 @@
       "published": "Wed, 17 Dec 2025 15:10:00 +0800",
       "category": "自动驾驶",
       "quality_score": 3,
-      "collected_at": "2025-12-17T15:11:10.082493"
+      "collected_at": "2025-12-17T16:32:36.475907"
     }
   ],
   "categories": {
     "AI通用": 3,
     "芯片硬件": 1,
-    "大模型": 1,
+    "大模型": 2,
     "医疗健康": 1,
     "自动驾驶": 1
   }
