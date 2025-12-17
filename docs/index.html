@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 AI机器人日报</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #667eea;
+            border-left: 4px solid #667eea;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-list li {
+            margin: 12px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+        .file-list li:hover {
+            background: #eef2ff;
+            transform: translateX(5px);
+        }
+        .file-list a {
+            color: #2d3748;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .file-list .date {
+            color: #718096;
+            font-size: 0.9em;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .stat-label {
+            color: #718096;
+            font-size: 0.9em;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .status-active {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+        .status-inactive {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #718096;
+            font-size: 0.9em;
+            border-top: 1px solid #e2e8f0;
+        }
+        .loading {
+            text-align: center;
+            padding: 30px;
+            color: #667eea;
+        }
+        .loading:after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+        @keyframes dots {
+            0%, 20% { content: ''; }
+            40% { content: '.'; }
+            60% { content: '..'; }
+            80%, 100% { content: '...'; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 AI机器人日报系统</h1>
+        <p class="subtitle">每日自动收集、处理并生成AI与机器人领域的最新资讯报告</p >
+    </div>
+
+    <div class="card">
+        <h2>📊 系统状态</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="daily-count">--</div>
+                <div class="stat-label">今日资讯数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="weekly-count">--</div>
+                <div class="stat-label">本周资讯数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="last-update">--</div>
+                <div class="stat-label">最后更新</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number"><span class="status status-active" id="system-status">运行中</span></div>
+                <div class="stat-label">系统状态</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📅 最新日报</h2>
+        <div id="daily-loading" class="loading">正在加载日报列表</div>
+        <ul id="daily-list" class="file-list" style="display:none;"></ul>
+    </div>
+
+    <div class="card">
+        <h2>📈 最新周报</h2>
+        <div id="weekly-loading" class="loading">正在加载周报列表</div>
+        <ul id="weekly-list" class="file-list" style="display:none;"></ul>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ 如何使用</h2>
+        <p><strong>1. 查看日报</strong>: 点击上方链接查看每日AI资讯报告</p >
+        <p><strong>2. 获取内容</strong>: 日报中包含可直接发布到小红书、抖音等平台的内容</p >
+        <p><strong>3. 系统自动运行</strong>: 每天北京时间9点自动更新</p >
+        <p><strong>4. 手动触发</strong>: 如需立即更新，可在GitHub Actions页面手动运行</p >
+    </div>
+
+    <footer>
+        <p>© 2024 AI机器人日报系统 | 完全自动化生成 | 最后更新: <span id="current-date"></span></p >
+        <p>数据来源: 36氪、机器之心、量子位等科技媒体 | AI处理: 智谱GLM大模型</p >
+        <p style="font-size: 0.8em; margin-top: 10px;">系统基于GitHub Actions构建，完全免费</p >
+    </footer>
+
+    <script>
+        // 设置当前日期
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN');
+        
+        // 加载日报列表
+        function loadDailyReports() {
+            fetch('./daily/')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'))
+                        .filter(a => a.href.endsWith('.md'))
+                        .slice(0, 10);
+                    
+                    if (links.length > 0) {
+                        const list = document.getElementById('daily-list');
+                        const loading = document.getElementById('daily-loading');
+                        
+                        list.innerHTML = '';
+                        links.forEach(link => {
+                            const li = document.createElement('li');
+                            const date = link.textContent.replace('.md', '');
+                            li.innerHTML = `
+                                <a href=" ">
+                                    <span>📰 ${date} AI日报</span>
+                                    <span class="date">${date}</span>
+                                </a >
+                            `;
+                            list.appendChild(li);
+                        });
+                        
+                        // 更新今日资讯数
+                        document.getElementById('daily-count').textContent = links.length > 0 ? '5+' : '0';
+                        document.getElementById('last-update').textContent = links[0]?.textContent.replace('.md', '') || '--';
+                        
+                        loading.style.display = 'none';
+                        list.style.display = 'block';
+                    } else {
+                        document.getElementById('daily-loading').innerHTML = '暂无日报，系统将在今天9点自动生成';
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('daily-loading').innerHTML = '加载失败，请稍后重试';
+                });
+        }
+        
+        // 加载周报列表
+        function loadWeeklyReports() {
+            // 尝试从不同路径加载周报
+            fetch('./weekly/')
+                .then(response => {
+                    if (!response.ok) throw new Error();
+                    return response.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'))
+                        .filter(a => a.href.endsWith('.md'))
+                        .slice(0, 5);
+                    
+                    if (links.length > 0) {
+                        const list = document.getElementById('weekly-list');
+                        const loading = document.getElementById('weekly-loading');
+                        
+                        list.innerHTML = '';
+                        links.forEach(link => {
+                            const li = document.createElement('li');
+                            const name = link.textContent.replace('.md', '').replace('report_', '周报');
+                            li.innerHTML = `
+                                <a href="${link.href}">
+                                    <span>📊 ${name}</span>
+                                    <span class="date">${link.textContent.match(/week(\d+)/)?.[1] || ''}周</span>
+                                </a >
+                            `;
+                            list.appendChild(li);
+                        });
+                        
+                        document.getElementById('weekly-count').textContent = links.length;
+                        
+                        loading.style.display = 'none';
+                        list.style.display = 'block';
+                    } else {
+                        document.getElementById('weekly-loading').innerHTML = '暂无周报，每周一生成';
+                    }
+                })
+                .catch(() => {
+                    // 尝试备用路径
+                    fetch('../output/weekly/')
+                        .then(response => {
+                            if (!response.ok) throw new Error();
+                            return response.text();
+                        })
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const links = Array.from(doc.querySelectorAll('a'))
+                                .filter(a => a.href.endsWith('.md'))
+                                .slice(0, 3);
+                            
+                            if (links.length > 0) {
+                                const list = document.getElementById('weekly-list');
+                                const loading = document.getElementById('weekly-loading');
+                                
+                                list.innerHTML = '';
+                                links.forEach(link => {
+                                    const li = document.createElement('li');
+                                    li.innerHTML = `<a href="${link.href}">📊 ${link.textContent}</a >`;
+                                    list.appendChild(li);
+                                });
+                                
+                                loading.style.display = 'none';
+                                list.style.display = 'block';
+                            }
+                        })
+                        .catch(() => {
+                            document.getElementById('weekly-loading').innerHTML = '暂无周报数据';
+                        });
+                });
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDailyReports();
+            loadWeeklyReports();
+            
+            // 每30秒刷新一次状态
+            setInterval(loadDailyReports, 30000);
+        });
+    </script>
+</body>
+</html>
