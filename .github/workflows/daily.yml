@@ -36,10 +36,11 @@ jobs:
       run: |
         python scripts/image_generator.py
     
-    - name: 提交更改
+    - name: 显示生成结果（不自动推送）
       run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add -A
-        git commit -m "🤖 自动更新: $(date '+%Y-%m-%d') AI机器人日报" || echo "无变化"
-        git push
+        echo "✅ 日报生成成功！"
+        echo "生成的文件："
+        find output/ -type f | head -20
+        echo ""
+        echo "可以直接在GitHub上查看生成的文件"
+        echo "或者手动下载这些文件用于发布"
