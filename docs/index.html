@@ -3,328 +3,611 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 AI机器人日报</title>
+    <title>🤖 AI机器人日报系统</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 3em;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(30px, 30px) rotate(360deg); }
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
         .subtitle {
             font-size: 1.2em;
             opacity: 0.9;
-            margin-top: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
         }
-        .card {
-            background: white;
+        
+        .status-bar {
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        .card h2 {
-            color: #667eea;
-            border-left: 4px solid #667eea;
-            padding-left: 10px;
-            margin-top: 0;
-        }
-        .file-list {
-            list-style: none;
-            padding: 0;
-        }
-        .file-list li {
-            margin: 12px 0;
-            padding: 15px;
-            border-radius: 8px;
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            transition: all 0.3s;
-        }
-        .file-list li:hover {
-            background: #eef2ff;
-            transform: translateX(5px);
-        }
-        .file-list a {
-            color: #2d3748;
-            text-decoration: none;
-            font-weight: 500;
+        
+        .status-item {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .status-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .status-label {
+            font-weight: 600;
+        }
+        
+        .status-value {
+            font-weight: 300;
+        }
+        
+        .status-good {
+            color: #4CAF50;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        .file-list {
+            list-style: none;
+        }
+        
+        .file-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+            cursor: pointer;
+        }
+        
+        .file-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left-color: #4CAF50;
+        }
+        
+        .file-link {
+            display: block;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        
+        .file-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
             align-items: center;
         }
-        .file-list .date {
-            color: #718096;
+        
+        .file-title::before {
+            content: '📄';
+            margin-right: 10px;
+        }
+        
+        .file-date {
+            color: #666;
             font-size: 0.9em;
         }
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .stat-item {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        }
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-            margin: 10px 0;
-        }
-        .stat-label {
-            color: #718096;
-            font-size: 0.9em;
-        }
-        .status {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        .status-active {
-            background: #c6f6d5;
-            color: #22543d;
-        }
-        .status-inactive {
-            background: #fed7d7;
-            color: #742a2a;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: #718096;
-            font-size: 0.9em;
-            border-top: 1px solid #e2e8f0;
-        }
+        
         .loading {
             text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .image-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            background: #f0f0f0;
+        }
+        
+        .image-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            text-align: center;
             padding: 30px;
-            color: #667eea;
+            color: #666;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
         }
-        .loading:after {
-            content: '...';
-            animation: dots 1.5s steps(4, end) infinite;
+        
+        .alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
-        @keyframes dots {
-            0%, 20% { content: ''; }
-            40% { content: '.'; }
-            60% { content: '..'; }
-            80%, 100% { content: '...'; }
+        
+        .alert h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .alert p {
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🤖 AI机器人日报系统</h1>
-        <p class="subtitle">每日自动收集、处理并生成AI与机器人领域的最新资讯报告</p >
-    </div>
-
-    <div class="card">
-        <h2>📊 系统状态</h2>
-        <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number" id="daily-count">--</div>
-                <div class="stat-label">今日资讯数</div>
+    <div class="container">
+        <header class="header">
+            <h1>🤖 AI机器人日报系统</h1>
+            <p class="subtitle">每日自动生成AI与机器人领域最新资讯报告</p>
+            
+            <div class="status-bar">
+                <div class="status-item">
+                    <span class="status-label">系统状态</span>
+                    <span class="status-value status-good" id="system-status">运行中</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">最后更新</span>
+                    <span class="status-value" id="last-update">加载中...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">日报数量</span>
+                    <span class="status-value" id="report-count">0</span>
+                </div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number" id="weekly-count">--</div>
-                <div class="stat-label">本周资讯数</div>
+        </header>
+        
+        <main class="content">
+            <!-- 提示信息 -->
+            <div class="alert" id="cache-alert">
+                <h3>💡 提示</h3>
+                <p>如果页面内容未更新，请按 <kbd>Ctrl</kbd> + <kbd>F5</kbd> 强制刷新浏览器缓存。</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number" id="last-update">--</div>
-                <div class="stat-label">最后更新</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number"><span class="status status-active" id="system-status">运行中</span></div>
-                <div class="stat-label">系统状态</div>
-            </div>
-        </div>
+            
+            <!-- 最新日报 -->
+            <section class="section">
+                <h2>📅 最新日报</h2>
+                <div id="daily-loading" class="loading">正在加载日报列表...</div>
+                <ul id="daily-list" class="file-list" style="display: none;"></ul>
+                <div id="daily-empty" class="no-data" style="display: none;">
+                    <p>暂无日报，系统将在今天9点自动生成</p>
+                    <p><small>您可以在GitHub仓库的 <code>output/daily/</code> 目录查看生成的文件</small></p>
+                </div>
+            </section>
+            
+            <!-- 今日图片 -->
+            <section class="section">
+                <h2>🖼️ 今日图片</h2>
+                <div id="images-loading" class="loading">正在加载图片...</div>
+                <div id="image-grid" class="image-grid" style="display: none;"></div>
+                <div id="images-empty" class="no-data" style="display: none;">
+                    <p>暂无图片，图片生成可能需要一些时间</p>
+                </div>
+            </section>
+            
+            <!-- 系统信息 -->
+            <section class="section">
+                <h2>⚙️ 系统信息</h2>
+                <div class="status-bar" style="background: #f8f9fa;">
+                    <div class="status-item">
+                        <span class="status-label">数据源</span>
+                        <span class="status-value">36氪、机器之心、量子位等</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">AI处理</span>
+                        <span class="status-value">智谱GLM大模型</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">自动化</span>
+                        <span class="status-value">GitHub Actions</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">运行频率</span>
+                        <span class="status-value">每日9:00（北京时间）</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 使用指南 -->
+            <section class="section">
+                <h2>📖 使用指南</h2>
+                <div style="padding: 20px; background: white; border-radius: 10px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">如何获取内容？</h3>
+                    <ol style="padding-left: 20px; color: #555;">
+                        <li style="margin-bottom: 10px;">点击上方日报链接查看内容</li>
+                        <li style="margin-bottom: 10px;">复制小红书文案（每篇日报中都有提供）</li>
+                        <li style="margin-bottom: 10px;">下载生成的图片用于配图</li>
+                        <li style="margin-bottom: 10px;">发布到各社交平台</li>
+                    </ol>
+                    
+                    <h3 style="color: #2c3e50; margin-bottom: 15px; margin-top: 25px;">GitHub仓库文件位置</h3>
+                    <ul style="padding-left: 20px; color: #555;">
+                        <li style="margin-bottom: 5px;"><code>output/daily/</code> - 每日生成的报告</li>
+                        <li style="margin-bottom: 5px;"><code>output/export/</code> - 各平台导出文件</li>
+                        <li style="margin-bottom: 5px;"><code>output/images/</code> - 生成的图片</li>
+                        <li><code>docs/daily/</code> - 网页版日报</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>© 2024 AI机器人日报系统 | 完全自动化生成 | 最后检查时间: <span id="current-time"></span></p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                系统基于GitHub Actions构建 | 数据来源于公开科技资讯 | 
+                <a href="https://github.com/d7pj9kj4pq-hash/-ai-robotics-daily" style="color: #667eea;">查看源代码</a>
+            </p>
+        </footer>
     </div>
-
-    <div class="card">
-        <h2>📅 最新日报</h2>
-        <div id="daily-loading" class="loading">正在加载日报列表</div>
-        <ul id="daily-list" class="file-list" style="display:none;"></ul>
-    </div>
-
-    <div class="card">
-        <h2>📈 最新周报</h2>
-        <div id="weekly-loading" class="loading">正在加载周报列表</div>
-        <ul id="weekly-list" class="file-list" style="display:none;"></ul>
-    </div>
-
-    <div class="card">
-        <h2>⚙️ 如何使用</h2>
-        <p><strong>1. 查看日报</strong>: 点击上方链接查看每日AI资讯报告</p >
-        <p><strong>2. 获取内容</strong>: 日报中包含可直接发布到小红书、抖音等平台的内容</p >
-        <p><strong>3. 系统自动运行</strong>: 每天北京时间9点自动更新</p >
-        <p><strong>4. 手动触发</strong>: 如需立即更新，可在GitHub Actions页面手动运行</p >
-    </div>
-
-    <footer>
-        <p>© 2024 AI机器人日报系统 | 完全自动化生成 | 最后更新: <span id="current-date"></span></p >
-        <p>数据来源: 36氪、机器之心、量子位等科技媒体 | AI处理: 智谱GLM大模型</p >
-        <p style="font-size: 0.8em; margin-top: 10px;">系统基于GitHub Actions构建，完全免费</p >
-    </footer>
 
     <script>
-        // 设置当前日期
-        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN');
+        // 设置当前时间
+        function updateCurrentTime() {
+            const now = new Date();
+            document.getElementById('current-time').textContent = 
+                now.toLocaleString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                });
+        }
         
         // 加载日报列表
-        function loadDailyReports() {
-            fetch('./daily/')
-                .then(response => response.text())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-                    const links = Array.from(doc.querySelectorAll('a'))
-                        .filter(a => a.href.endsWith('.md'))
-                        .slice(0, 10);
+        async function loadDailyReports() {
+            try {
+                const response = await fetch('./daily/');
+                if (!response.ok) {
+                    throw new Error('无法访问日报目录');
+                }
+                
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // 查找所有的Markdown文件链接
+                const links = Array.from(doc.querySelectorAll('a'))
+                    .filter(a => a.href.endsWith('.md'))
+                    .map(a => ({
+                        name: a.textContent.replace('.md', ''),
+                        url: a.href,
+                        date: a.textContent.replace('.md', '')
+                    }))
+                    .sort((a, b) => b.date.localeCompare(a.date)) // 按日期倒序
+                    .slice(0, 10); // 只显示最近10篇
+                
+                const dailyList = document.getElementById('daily-list');
+                const dailyLoading = document.getElementById('daily-loading');
+                const dailyEmpty = document.getElementById('daily-empty');
+                
+                if (links.length > 0) {
+                    dailyList.innerHTML = '';
                     
-                    if (links.length > 0) {
-                        const list = document.getElementById('daily-list');
-                        const loading = document.getElementById('daily-loading');
-                        
-                        list.innerHTML = '';
-                        links.forEach(link => {
-                            const li = document.createElement('li');
-                            const date = link.textContent.replace('.md', '');
-                            li.innerHTML = `
-                                <a href=" ">
-                                    <span>📰 ${date} AI日报</span>
-                                    <span class="date">${date}</span>
-                                </a >
-                            `;
-                            list.appendChild(li);
-                        });
-                        
-                        // 更新今日资讯数
-                        document.getElementById('daily-count').textContent = links.length > 0 ? '5+' : '0';
-                        document.getElementById('last-update').textContent = links[0]?.textContent.replace('.md', '') || '--';
-                        
-                        loading.style.display = 'none';
-                        list.style.display = 'block';
-                    } else {
-                        document.getElementById('daily-loading').innerHTML = '暂无日报，系统将在今天9点自动生成';
-                    }
-                })
-                .catch(() => {
-                    document.getElementById('daily-loading').innerHTML = '加载失败，请稍后重试';
-                });
+                    links.forEach(link => {
+                        const li = document.createElement('li');
+                        li.className = 'file-item';
+                        li.innerHTML = `
+                            <a href="${link.url}" class="file-link" target="_blank">
+                                <div class="file-title">${link.date} AI日报</div>
+                                <div class="file-date">点击查看完整报告</div>
+                            </a>
+                        `;
+                        dailyList.appendChild(li);
+                    });
+                    
+                    // 更新统计数据
+                    document.getElementById('report-count').textContent = links.length;
+                    document.getElementById('last-update').textContent = links[0].date;
+                    
+                    dailyLoading.style.display = 'none';
+                    dailyEmpty.style.display = 'none';
+                    dailyList.style.display = 'block';
+                    
+                } else {
+                    dailyLoading.style.display = 'none';
+                    dailyEmpty.style.display = 'block';
+                }
+                
+            } catch (error) {
+                console.error('加载日报失败:', error);
+                document.getElementById('daily-loading').innerHTML = 
+                    '<div class="no-data">加载失败，请检查网络连接</div>';
+            }
         }
         
-        // 加载周报列表
-        function loadWeeklyReports() {
-            // 尝试从不同路径加载周报
-            fetch('./weekly/')
-                .then(response => {
-                    if (!response.ok) throw new Error();
-                    return response.text();
-                })
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-                    const links = Array.from(doc.querySelectorAll('a'))
-                        .filter(a => a.href.endsWith('.md'))
-                        .slice(0, 5);
+        // 加载图片
+        async function loadImages() {
+            try {
+                // 获取最新日期（今天）
+                const today = new Date().toISOString().split('T')[0];
+                
+                // 尝试加载今天日期的图片
+                const response = await fetch(`./images/${today}/`);
+                if (!response.ok) {
+                    throw new Error('无法访问图片目录');
+                }
+                
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                // 查找图片文件
+                const images = Array.from(doc.querySelectorAll('a'))
+                    .filter(a => a.href.match(/\.(png|jpg|jpeg)$/i))
+                    .map(a => ({
+                        name: a.textContent,
+                        url: a.href
+                    }))
+                    .slice(0, 6); // 最多显示6张
+                
+                const imageGrid = document.getElementById('image-grid');
+                const imagesLoading = document.getElementById('images-loading');
+                const imagesEmpty = document.getElementById('images-empty');
+                
+                if (images.length > 0) {
+                    imageGrid.innerHTML = '';
                     
-                    if (links.length > 0) {
-                        const list = document.getElementById('weekly-list');
-                        const loading = document.getElementById('weekly-loading');
-                        
-                        list.innerHTML = '';
-                        links.forEach(link => {
-                            const li = document.createElement('li');
-                            const name = link.textContent.replace('.md', '').replace('report_', '周报');
-                            li.innerHTML = `
-                                <a href="${link.href}">
-                                    <span>📊 ${name}</span>
-                                    <span class="date">${link.textContent.match(/week(\d+)/)?.[1] || ''}周</span>
-                                </a >
-                            `;
-                            list.appendChild(li);
-                        });
-                        
-                        document.getElementById('weekly-count').textContent = links.length;
-                        
-                        loading.style.display = 'none';
-                        list.style.display = 'block';
-                    } else {
-                        document.getElementById('weekly-loading').innerHTML = '暂无周报，每周一生成';
-                    }
-                })
-                .catch(() => {
-                    // 尝试备用路径
-                    fetch('../output/weekly/')
-                        .then(response => {
-                            if (!response.ok) throw new Error();
-                            return response.text();
-                        })
-                        .then(html => {
-                            const parser = new DOMParser();
-                            const doc = parser.parseFromString(html, 'text/html');
-                            const links = Array.from(doc.querySelectorAll('a'))
-                                .filter(a => a.href.endsWith('.md'))
+                    images.forEach(img => {
+                        const div = document.createElement('div');
+                        div.className = 'image-item';
+                        div.innerHTML = `
+                            <img src="${img.url}" alt="${img.name}" loading="lazy">
+                        `;
+                        imageGrid.appendChild(div);
+                    });
+                    
+                    imagesLoading.style.display = 'none';
+                    imagesEmpty.style.display = 'none';
+                    imageGrid.style.display = 'grid';
+                    
+                } else {
+                    // 如果没有今天的图片，尝试加载昨天的
+                    const yesterday = new Date();
+                    yesterday.setDate(yesterday.getDate() - 1);
+                    const yesterdayStr = yesterday.toISOString().split('T')[0];
+                    
+                    try {
+                        const yesterdayResponse = await fetch(`./images/${yesterdayStr}/`);
+                        if (yesterdayResponse.ok) {
+                            const yesterdayHtml = await yesterdayResponse.text();
+                            const yesterdayDoc = parser.parseFromString(yesterdayHtml, 'text/html');
+                            
+                            const yesterdayImages = Array.from(yesterdayDoc.querySelectorAll('a'))
+                                .filter(a => a.href.match(/\.(png|jpg|jpeg)$/i))
                                 .slice(0, 3);
                             
-                            if (links.length > 0) {
-                                const list = document.getElementById('weekly-list');
-                                const loading = document.getElementById('weekly-loading');
+                            if (yesterdayImages.length > 0) {
+                                imageGrid.innerHTML = '';
                                 
-                                list.innerHTML = '';
-                                links.forEach(link => {
-                                    const li = document.createElement('li');
-                                    li.innerHTML = `<a href="${link.href}">📊 ${link.textContent}</a >`;
-                                    list.appendChild(li);
+                                yesterdayImages.forEach(a => {
+                                    const div = document.createElement('div');
+                                    div.className = 'image-item';
+                                    div.innerHTML = `
+                                        <img src="${a.href}" alt="${a.textContent}" loading="lazy">
+                                    `;
+                                    imageGrid.appendChild(div);
                                 });
                                 
-                                loading.style.display = 'none';
-                                list.style.display = 'block';
+                                imagesLoading.style.display = 'none';
+                                imagesEmpty.style.display = 'none';
+                                imageGrid.style.display = 'grid';
+                                return;
                             }
-                        })
-                        .catch(() => {
-                            document.getElementById('weekly-loading').innerHTML = '暂无周报数据';
-                        });
-                });
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    imagesLoading.style.display = 'none';
+                    imagesEmpty.style.display = 'block';
+                }
+                
+            } catch (error) {
+                console.error('加载图片失败:', error);
+                document.getElementById('images-loading').innerHTML = 
+                    '<div class="no-data">图片加载失败</div>';
+            }
         }
         
-        // 页面加载完成后执行
+        // 检查系统状态
+        async function checkSystemStatus() {
+            try {
+                // 尝试访问一个已知存在的文件
+                const response = await fetch('./daily/');
+                if (response.ok) {
+                    document.getElementById('system-status').textContent = '运行正常';
+                    document.getElementById('system-status').className = 'status-value status-good';
+                } else {
+                    document.getElementById('system-status').textContent = '部分异常';
+                    document.getElementById('system-status').className = 'status-value';
+                }
+            } catch (error) {
+                document.getElementById('system-status').textContent = '检查失败';
+                document.getElementById('system-status').className = 'status-value';
+            }
+        }
+        
+        // 页面加载完成后的初始化
         document.addEventListener('DOMContentLoaded', function() {
+            updateCurrentTime();
             loadDailyReports();
-            loadWeeklyReports();
+            loadImages();
+            checkSystemStatus();
             
-            // 每30秒刷新一次状态
-            setInterval(loadDailyReports, 30000);
+            // 每分钟更新时间
+            setInterval(updateCurrentTime, 60000);
+            
+            // 每5分钟重新加载内容
+            setInterval(() => {
+                loadDailyReports();
+                loadImages();
+                checkSystemStatus();
+            }, 300000);
+            
+            // 显示缓存提示
+            const lastVisit = localStorage.getItem('lastVisit');
+            const now = Date.now();
+            
+            if (!lastVisit || now - parseInt(lastVisit) > 3600000) { // 1小时
+                document.getElementById('cache-alert').style.display = 'block';
+            } else {
+                document.getElementById('cache-alert').style.display = 'none';
+            }
+            
+            localStorage.setItem('lastVisit', now.toString());
         });
+        
+        // 提供手动刷新按钮的功能
+        window.refreshContent = function() {
+            document.getElementById('daily-loading').style.display = 'block';
+            document.getElementById('daily-list').style.display = 'none';
+            document.getElementById('daily-empty').style.display = 'none';
+            
+            document.getElementById('images-loading').style.display = 'block';
+            document.getElementById('image-grid').style.display = 'none';
+            document.getElementById('images-empty').style.display = 'none';
+            
+            loadDailyReports();
+            loadImages();
+            checkSystemStatus();
+            
+            alert('内容已刷新！');
+        };
     </script>
 </body>
 </html>
