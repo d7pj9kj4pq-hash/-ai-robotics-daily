@@ -88,3 +88,16 @@ jobs:
         
         # 推送更改，如果失败则尝试强制推送
         git push origin HEAD:main || git push --force origin HEAD:main
+
+      - name: 检查网页文件
+      run: |
+        python scripts/check_web.py
+    
+    - name: 验证GitHub Pages访问
+      run: |
+        echo "🔗 您的GitHub Pages地址:"
+        echo "https://d7pj9kj4pq-hash.github.io/-ai-robotics-daily/"
+        echo ""
+        echo "📄 直接访问测试:"
+        echo "日报: https://d7pj9kj4pq-hash.github.io/-ai-robotics-daily/daily/2025-12-18.md"
+        echo "图片: https://d7pj9kj4pq-hash.github.io/-ai-robotics-daily/images/2025-12-18/news_1.png"
