@@ -393,7 +393,11 @@
             try {
                 const response = await fetch('./daily/');
                 if (!response.ok) {
-                    throw new Error('无法访问日报目录');
+                    // 尝试其他路径格式
+                    const response2 = await fetch('/daily/');
+                    if (!response2.ok) {
+                        throw new Error('无法访问日报目录');
+                    }
                 }
                 
                 const html = await response.text();
