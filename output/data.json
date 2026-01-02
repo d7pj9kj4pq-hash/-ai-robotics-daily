@@ -1,61 +1,17 @@
 {
-  "last_updated": "2026-01-01T04:36:39.054503",
-  "news_count": 7,
+  "last_updated": "2026-01-02T04:12:59.713206",
+  "news_count": 3,
   "news": [
     {
-      "title": "「视频世界模型」新突破：AI连续生成5分钟，画面也不崩",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.jiqizhixin.com/articles/2025-12-31-9",
-      "source": "机器之心",
-      "published": "Wed, 31 Dec 2025 17:48:45 +0800",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-01-01T04:36:39.053966"
-    },
-    {
-      "title": "刚刚，稚晖君发布的人形机器人Q1，小到能塞进书包",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.jiqizhixin.com/articles/2025-12-31-8",
-      "source": "机器之心",
-      "published": "Wed, 31 Dec 2025 16:39:00 +0800",
+      "title": "能文能武！智元首个机器人艺人天团亮相湖南卫视跨年演唱会",
+      "summary": "科技与文娱的碰撞",
+      "raw_summary": "科技与文娱的碰撞",
+      "link": "https://www.qbitai.com/2026/01/366397.html",
+      "source": "量子位",
+      "published": "Thu, 01 Jan 2026 07:43:08 +0000",
       "category": "机器人",
-      "quality_score": 5,
-      "collected_at": "2026-01-01T04:36:39.053983"
-    },
-    {
-      "title": "AI终于学会在家“伺候人”！Hey Tuya，我躺了",
-      "summary": "一个“操作系统级”AI生活助手",
-      "raw_summary": "一个“操作系统级”AI生活助手",
-      "link": "https://www.qbitai.com/2025/12/366334.html",
-      "source": "量子位",
-      "published": "Wed, 31 Dec 2025 08:38:14 +0000",
-      "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2026-01-01T04:36:39.053990"
-    },
-    {
-      "title": "吴恩达年度AI总结来了！附带一份软件开发学习小tips",
-      "summary": "“2025标志着新工业时代的到来”",
-      "raw_summary": "“2025标志着新工业时代的到来”",
-      "link": "https://www.qbitai.com/2025/12/366256.html",
-      "source": "量子位",
-      "published": "Wed, 31 Dec 2025 07:53:59 +0000",
-      "category": "教育",
-      "quality_score": 5,
-      "collected_at": "2026-01-01T04:36:39.053995"
-    },
-    {
-      "title": "财大气粗的老黄继续出手！20多亿美金收购以色列AI初创公司",
-      "summary": "属实把“收购式招聘”玩明白了",
-      "raw_summary": "属实把“收购式招聘”玩明白了",
-      "link": "https://www.qbitai.com/2025/12/366314.html",
-      "source": "量子位",
-      "published": "Wed, 31 Dec 2025 07:53:16 +0000",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-01-01T04:36:39.053999"
+      "collected_at": "2026-01-02T04:12:59.712651"
     },
     {
       "title": "从「工具」到「搭档」，AI4S 走过深水区 | 2025年终回顾",
@@ -66,7 +22,7 @@
       "published": "Wed, 31 Dec 2025 18:21:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-01-01T04:36:39.054004"
+      "collected_at": "2026-01-02T04:12:59.712672"
     },
     {
       "title": "清华赵昊最新力作：0.4 秒完成4D高斯重建，自驾仿真新SOTA丨GAIR 2025",
@@ -77,12 +33,11 @@
       "published": "Wed, 31 Dec 2025 17:10:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-01-01T04:36:39.054008"
+      "collected_at": "2026-01-02T04:12:59.712680"
     }
   ],
   "categories": {
-    "AI通用": 5,
     "机器人": 1,
-    "教育": 1
+    "AI通用": 2
   }
 }
