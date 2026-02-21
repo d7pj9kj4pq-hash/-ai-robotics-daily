@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-02-20T03:32:40.096232",
-  "news_count": 10,
+  "last_updated": "2026-02-21T03:23:51.865462",
+  "news_count": 7,
   "news": [
     {
       "title": "揭秘春晚“两个蔡明”背后，这家机器人公司的百日奋战",
@@ -11,40 +11,18 @@
       "published": "2026-02-17 10:16:47  +0800",
       "category": "机器人",
       "quality_score": 3,
-      "collected_at": "2026-02-20T03:32:40.095540"
+      "collected_at": "2026-02-21T03:23:51.864896"
     },
     {
-      "title": "春晚宇树四分半：全球人形机器人一哥的功夫梦",
+      "title": "8500亿美元！OpenAI刷新AI公司估值纪录，领先第二名2.2倍",
       "summary": "",
       "raw_summary": "",
-      "link": "https://www.jiqizhixin.com/articles/2026-02-19-5",
-      "source": "机器之心",
-      "published": "Thu, 19 Feb 2026 21:02:14 +0800",
-      "category": "机器人",
-      "quality_score": 4,
-      "collected_at": "2026-02-20T03:32:40.095558"
-    },
-    {
-      "title": "让AI智能体「记住」失败经验：微软提出Re-TRAC框架，4B性能SOTA，30B超越358B",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.jiqizhixin.com/articles/2026-02-19-4",
-      "source": "机器之心",
-      "published": "Thu, 19 Feb 2026 20:57:26 +0800",
+      "link": "https://www.qbitai.com/2026/02/381542.html",
+      "source": "量子位",
+      "published": "Fri, 20 Feb 2026 09:49:58 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-02-20T03:32:40.095564"
-    },
-    {
-      "title": "OpenAI偷偷改使命：不再「造福人类」，安全都删了",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.jiqizhixin.com/articles/2026-02-19-2",
-      "source": "机器之心",
-      "published": "Thu, 19 Feb 2026 20:30:18 +0800",
-      "category": "AI通用",
-      "quality_score": 4,
-      "collected_at": "2026-02-20T03:32:40.095569"
+      "collected_at": "2026-02-21T03:23:51.864914"
     },
     {
       "title": "45亿红包打响AI入口大战，百度给出另一种回应",
@@ -55,7 +33,7 @@
       "published": "Thu, 19 Feb 2026 10:15:41 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-02-20T03:32:40.095573"
+      "collected_at": "2026-02-21T03:23:51.864919"
     },
     {
       "title": "从舞台秀到真干活，北京卫视春晚演绎机器人走向日常好用",
@@ -66,18 +44,7 @@
       "published": "Thu, 19 Feb 2026 09:58:37 +0000",
       "category": "机器人",
       "quality_score": 4,
-      "collected_at": "2026-02-20T03:32:40.095579"
-    },
-    {
-      "title": "太初元碁：40+大模型即发即适配，上线即可用，国产算力高效落地",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.qbitai.com/2026/02/381415.html",
-      "source": "量子位",
-      "published": "Thu, 19 Feb 2026 06:11:38 +0000",
-      "category": "大模型",
-      "quality_score": 5,
-      "collected_at": "2026-02-20T03:32:40.095583"
+      "collected_at": "2026-02-21T03:23:51.864925"
     },
     {
       "title": "千问3.5引爆全球AI产业链，英伟达、华为昇腾、AMD、苹果等第一时间适配",
@@ -88,7 +55,7 @@
       "published": "Wed, 18 Feb 2026 15:21:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-02-20T03:32:40.095588"
+      "collected_at": "2026-02-21T03:23:51.864930"
     },
     {
       "title": "深谋科技发布震撼空中拜年视频:其大载重低空eVTOL搭载人形机器人“美猴王”腾云驾雾给大家拜年",
@@ -99,7 +66,7 @@
       "published": "Wed, 18 Feb 2026 09:20:00 +0800",
       "category": "机器人",
       "quality_score": 3,
-      "collected_at": "2026-02-20T03:32:40.095597"
+      "collected_at": "2026-02-21T03:23:51.864939"
     },
     {
       "title": "越疆机器人登上央视春晚，点亮高端智造之光",
@@ -110,12 +77,11 @@
       "published": "Tue, 17 Feb 2026 13:03:00 +0800",
       "category": "机器人",
       "quality_score": 3,
-      "collected_at": "2026-02-20T03:32:40.095602"
+      "collected_at": "2026-02-21T03:23:51.864944"
     }
   ],
   "categories": {
-    "机器人": 5,
-    "AI通用": 4,
-    "大模型": 1
+    "机器人": 4,
+    "AI通用": 3
   }
 }
