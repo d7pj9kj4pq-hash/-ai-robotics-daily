@@ -1,28 +1,17 @@
 {
-  "last_updated": "2026-03-21T03:23:06.336599",
-  "news_count": 4,
+  "last_updated": "2026-03-22T03:39:49.037515",
+  "news_count": 3,
   "news": [
     {
-      "title": "AI屠刀下一站“Vibe设计”！谷歌一个产品把合作伙伴Figma干崩了",
-      "summary": "软件行业又遭一记重创",
-      "raw_summary": "软件行业又遭一记重创",
-      "link": "https://www.qbitai.com/2026/03/390235.html",
+      "title": "英伟达GTC现场的隐形AI巨头：老黄机器人demo背后都是它",
+      "summary": "光轮智能，正在定义Physical AI的基础设施",
+      "raw_summary": "光轮智能，正在定义Physical AI的基础设施",
+      "link": "https://www.qbitai.com/2026/03/390924.html",
       "source": "量子位",
-      "published": "Fri, 20 Mar 2026 07:40:16 +0000",
-      "category": "AI通用",
+      "published": "Sat, 21 Mar 2026 09:39:22 +0000",
+      "category": "机器人",
       "quality_score": 4,
-      "collected_at": "2026-03-21T03:23:06.335950"
-    },
-    {
-      "title": "前荣耀AI实验室主任带队：用“超级大脑”接管农场，24小时不打烊",
-      "summary": "成本直降60%",
-      "raw_summary": "成本直降60%",
-      "link": "https://www.qbitai.com/2026/03/389609.html",
-      "source": "量子位",
-      "published": "Fri, 20 Mar 2026 05:37:12 +0000",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-03-21T03:23:06.335969"
+      "collected_at": "2026-03-22T03:39:49.036908"
     },
     {
       "title": "我们用「西游取经团」实测 MiniMax M2.7 ，发现 AI 已经进化成这样了？",
@@ -33,7 +22,7 @@
       "published": "Fri, 20 Mar 2026 19:14:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-03-21T03:23:06.335977"
+      "collected_at": "2026-03-22T03:39:49.036928"
     },
     {
       "title": "进门CEO程建辉：做投研，AI越强大，人类越值钱",
@@ -44,10 +33,11 @@
       "published": "Fri, 20 Mar 2026 18:48:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-03-21T03:23:06.335987"
+      "collected_at": "2026-03-22T03:39:49.036939"
     }
   ],
   "categories": {
-    "AI通用": 4
+    "机器人": 1,
+    "AI通用": 2
   }
 }
