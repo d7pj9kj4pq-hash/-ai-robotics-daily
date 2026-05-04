@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-03T04:41:23.433405",
-  "news_count": 3,
+  "last_updated": "2026-05-04T04:40:44.759976",
+  "news_count": 4,
   "news": [
     {
       "title": "卓驭于贝贝：向物理AI转型，是生存法则的必然选择 | 最前线",
@@ -11,18 +11,29 @@
       "published": "2026-05-02 21:17:06  +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-05-03T04:41:23.432938"
+      "collected_at": "2026-05-04T04:40:44.759614"
     },
     {
-      "title": "他用AI办了个音乐节，主题：别读博",
-      "summary": "一代科研人的赛博苦中作乐",
-      "raw_summary": "一代科研人的赛博苦中作乐",
-      "link": "https://www.qbitai.com/2026/05/412597.html",
+      "title": "太抓马了！马斯克OpenAI开庭，硅谷巨富互揭老底像极了村口吵架",
+      "summary": "瓜多到吃不完",
+      "raw_summary": "瓜多到吃不完",
+      "link": "https://www.qbitai.com/2026/05/412080.html",
       "source": "量子位",
-      "published": "Fri, 01 May 2026 13:20:15 +0000",
+      "published": "Sun, 03 May 2026 09:43:20 +0000",
       "category": "AI通用",
-      "quality_score": 3,
-      "collected_at": "2026-05-03T04:41:23.432954"
+      "quality_score": 4,
+      "collected_at": "2026-05-04T04:40:44.759629"
+    },
+    {
+      "title": "不好！1930年的AI都来抢程序员饭碗了",
+      "summary": "完全无需互联网数据",
+      "raw_summary": "完全无需互联网数据",
+      "link": "https://www.qbitai.com/2026/05/412896.html",
+      "source": "量子位",
+      "published": "Sun, 03 May 2026 09:42:55 +0000",
+      "category": "AI通用",
+      "quality_score": 5,
+      "collected_at": "2026-05-04T04:40:44.759633"
     },
     {
       "title": "别克×火山引擎：至境E7行业首发搭载豆包大模型最新版",
@@ -33,11 +44,11 @@
       "published": "Mon, 13 Apr 2026 16:24:00 +0800",
       "category": "大模型",
       "quality_score": 3,
-      "collected_at": "2026-05-03T04:41:23.432960"
+      "collected_at": "2026-05-04T04:40:44.759637"
     }
   ],
   "categories": {
-    "AI通用": 2,
+    "AI通用": 3,
     "大模型": 1
   }
 }
