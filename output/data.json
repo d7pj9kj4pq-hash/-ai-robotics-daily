@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T04:40:44.759976",
+  "last_updated": "2026-05-05T04:17:10.382329",
   "news_count": 4,
   "news": [
     {
@@ -11,7 +11,7 @@
       "published": "2026-05-02 21:17:06  +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-05-04T04:40:44.759614"
+      "collected_at": "2026-05-05T04:17:10.381867"
     },
     {
       "title": "太抓马了！马斯克OpenAI开庭，硅谷巨富互揭老底像极了村口吵架",
@@ -22,7 +22,7 @@
       "published": "Sun, 03 May 2026 09:43:20 +0000",
       "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2026-05-04T04:40:44.759629"
+      "collected_at": "2026-05-05T04:17:10.381886"
     },
     {
       "title": "不好！1930年的AI都来抢程序员饭碗了",
@@ -33,7 +33,7 @@
       "published": "Sun, 03 May 2026 09:42:55 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-05-04T04:40:44.759633"
+      "collected_at": "2026-05-05T04:17:10.381891"
     },
     {
       "title": "别克×火山引擎：至境E7行业首发搭载豆包大模型最新版",
@@ -44,7 +44,7 @@
       "published": "Mon, 13 Apr 2026 16:24:00 +0800",
       "category": "大模型",
       "quality_score": 3,
-      "collected_at": "2026-05-04T04:40:44.759637"
+      "collected_at": "2026-05-05T04:17:10.381898"
     }
   ],
   "categories": {
