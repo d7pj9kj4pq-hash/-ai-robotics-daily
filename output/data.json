@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-27T04:54:40.650753",
-  "news_count": 6,
+  "last_updated": "2026-06-28T05:18:11.363444",
+  "news_count": 5,
   "news": [
     {
       "title": "G7易流发布货运行业首款穿戴式AI硬件「拍拍豆」，填平物流交付的“最后两米”｜最前线",
@@ -11,7 +11,18 @@
       "published": "2026-06-27 09:40:53  +0800",
       "category": "芯片硬件",
       "quality_score": 3,
-      "collected_at": "2026-06-27T04:54:40.650091"
+      "collected_at": "2026-06-28T05:18:11.362843"
+    },
+    {
+      "title": "微软年度AI职场报告：员工已经准备好了，公司还没有",
+      "summary": "28页干货爆炸",
+      "raw_summary": "28页干货爆炸",
+      "link": "https://www.qbitai.com/2026/06/439032.html",
+      "source": "量子位",
+      "published": "Sat, 27 Jun 2026 04:48:02 +0000",
+      "category": "AI通用",
+      "quality_score": 5,
+      "collected_at": "2026-06-28T05:18:11.362864"
     },
     {
       "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
@@ -22,29 +33,18 @@
       "published": "Sat, 27 Jun 2026 01:53:27 +0000",
       "category": "大模型",
       "quality_score": 5,
-      "collected_at": "2026-06-27T04:54:40.650108"
+      "collected_at": "2026-06-28T05:18:11.362869"
     },
     {
-      "title": "两个月连获两轮数亿元融资 深度机智以全栈自主路线加速国产物理AI基座模型落地",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.qbitai.com/2026/06/438887.html",
-      "source": "量子位",
-      "published": "Fri, 26 Jun 2026 15:45:43 +0000",
+      "title": "重构交互底层逻辑：Rokid发布AIOS，智能眼镜行业进入“原生”时刻",
+      "summary": "2026年6月26日，乐奇Rokid Open Day生态及开发者大会举行。会上，Rokid首次提出“AIOS原生智能眼镜操作系统”概念，并正式推出全球首款智能眼镜AIOS操作系统——YodaOS。这一动作的核心意义在于，它将行业竞争从硬件参数与功能堆砌，拉到了操作系统与交互逻辑的底层重构层面,这标志着智能眼镜行业正式迈入“原生AI操作系统驱动的新纪元”。从硬件堆叠到体验重构：YodaOS的四层递进逻辑在移动互联网时代，手机与触屏操作系统是核心交互载体。而进入AI时代，轻量化、可全天候佩戴、支持多模态大模型交互的智能眼镜，被业界视为下一代核心终端的有利候选。但长期以来，智能眼镜受限于系统适配弱、场景落地难、交互单一滞后等痛点，始终未能在体验上真正独立。YodaOS的发布，正是Rokid对这一现状的解题思路。Rokid副总裁、XR中心负责人王俊杰详细解读了YodaOS的技术架构。其核心设计理念是“以人为本，体验为先”，目标是让AI助手实现“召之即来，不用即隐”。为此，YodaOS搭建了四层递进式核心架构，试图完成从环境感知到信息呈现的全链路闭环：第一层为极速交互界面。 通过2字唤醒词与0",
+      "raw_summary": "<p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">2026年6月26日，乐奇Rokid Open Day生态及开发者大会举行。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">会上，Rokid首次提出“AIOS原生智能眼镜操作系统”概念，并正式推出全球首款智能眼镜AIOS操作系统——YodaOS。这一动作的核心意义在于，它将行业竞争从硬件参数与功能堆砌，拉到了操作系统与交互逻辑的底层重构层面,这标志着智能眼镜行业正式迈入“原生AI操作系统驱动的新纪元”。</span></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">从硬件堆叠到体验重构：YodaOS的四层递进逻辑</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">在移动互联网时代，手机与触屏操作系统是核心交互载体。而进入AI时代，轻量化、可全天候佩戴、支持多模态大模型交互的智能眼镜，被业界视为下一代核心终端的有利候选。但长期以来，智能眼镜受限于系统适配弱、场景落地难、交互单一滞后等痛点，始终未能在体验上真正独立。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">YodaOS的发布，正是Rokid对这一现状的解题思路。</span></p><p style=\"text-align: center; margin-bottom: 20px; line-height: 1.75em;\"><img src=\"https://static.leiphone.com/uploads/new/images/20260627/6a3f465208aed.jpg?imageView2/2/w/740\" /></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">Rokid副总裁、XR中心负责人王俊杰详细解读了YodaOS的技术架构。其核心设计理念是“以人为本，体验为先”，目标是让AI助手实现“召之即来，不用即隐”。为此，YodaOS搭建了四层递进式核心架构，试图完成从环境感知到信息呈现的全链路闭环：</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">第一层为极速交互界面。 通过2字唤醒词与0.2秒极速响应，打造自然丝滑的人机交互起点。第二层为多维感知层。 依托双芯片双系统独立运行、端边云协同算力拆分，实现全天候持久感知，兼顾设备续航与运行稳定性。第三层为智能能力层。 融合用户记忆、知识图谱、技能工具等多维上下文信息，让AI越用越懂用户、越用越贴合需求。第四层为场景落地层。 聚焦用户真实痛点，持续迭代功能服务——自去年9月产品发售以来，YodaOS已完成20次OTA升级、累计更新500项功能，实现“常用常新”的用户体验。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">这套架构的本质，是让眼镜“看得见环境、听得懂意图、办得成事情、展得清信息”，彻底告别传统AI交互中“一问一答”的机械感。</span></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">AI助手2.0与AIUI：从被动应答到主动服务</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">基于YodaOS，Rokid正式发布了乐奇AI助手2.0，完成两大核心革新。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">一是主动智能能力升级。新增行程自动记录、定时主动提醒功能，让AI从被动应答迈向主动服务。不过，关于“主动智能”的边界，祝铭明在会后的媒体采访中坦言，虽然这是Rokid特别想推荐给用户的能力，比如用户在活动现场待一天，回去后眼镜直接生成当日记录，但因为对隐私边界的定义尚在厘清中，这一功能并未作为主力推向大众，而是会优先在媒体场景或生产场景等界定清晰的领域尝试落地。“主动智能真的不需要获得人许可，甚至用户自己都不知道在拍摄什么，会引发更多讨论。我们还在消化上一件事的反馈。”</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">二是交互展示能力升级。全新自研AIUI全面调用眼镜硬件能力，以图形化沉浸式交互替代传统单一文字输出，实现从信息陈列到智能交互的跨越式升级。YodaOS因此成为全球首款支持AIUI的AI操作系统，真正让AI眼镜摆脱工具属性，实现感知、理解、执行、交互的全链路智能闭环。</span></p><p style=\"text-align: center; margin-bottom: 20px; line-height: 1.75em;\"><img src=\"https://static.leiphone.com/uploads/new/images/20260627/6a3f4652dc743.jpg?imageView2/2/w/740\" /></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">生态开放与全球化：440+智能体与多平台互联</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">操作系统的生命力在于生态。Rokid副总裁、生态负责人蔡国祥披露了品牌繁荣的全球化开发者生态成果。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">截至目前，乐奇智能体商店上线仅6个月，已上架440+智能体，另有5000+智能体正在研发迭代中。平台累计汇聚35000+注册开发者、10000+认证开发者及30+专业讲师。品牌重磅打造的Spatial Joy全球开发大赛已成功举办4届，吸引全球14个国家、2000+个人及团队开发者参与，累计诞生168项获奖作品，赛事总奖金超600万元。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">为降低AI开发门槛，乐奇打造全民共创生态，每月常态化举办社区开发者大赛，让普通用户也能依托平台能力，结合自身创意开发智能体，依托装机量、用户口碑完成评选，真正打破技术能力桎梏。同时，乐奇开发平台已全面打通支付宝、百度智能云、阿里云、谷歌云、亚马逊云、Unity等主流平台，实现生态互联互通。活动现场，蔡国祥正式官宣：乐奇海外智能体开发平台已上线，智能体商店将于7月10日正式上线，全面开启全球化生态共建新格局。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">在媒体采访中，Rokid创始人祝铭明进一步解释了生态策略背后的逻辑。他提到，Rokid目前在日本的Makuake平台以6.3亿日元创下全品类募资历史第一，一个重要原因便是当地开发者主动为眼镜开发应用，并在众筹页面号召用户购买体验，“他们变成了我们的推广者”。而在生态之争的层面，祝铭明认为，中国的AI生态一定是开放赢得封闭。“我们在日本比Meta做得更好，一个很简单的原因是我们可以用DeepSeek，也可以用Gemini，不是只能用MetaAI。很多日本用户觉得只能用MetaAI的东西没兴趣。”他判断，开放生态将成为Rokid在全球化竞争中的核心优势。</span></p><p style=\"text-align: center; margin-bottom: 20px; line-height: 1.75em;\"><img src=\"https://static.leiphone.com/uploads/new/images/20260627/6a3f465267e78.jpg?imageView2/2/w/740\" /></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">开发者实践与B端赋能：创意即产品，场景即价值</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">在开发者分享环节，国内跨界开发者丁奇胜的案例颇具代表性。身为技术美术、三维艺术创作者的丁奇胜，并非科班程序员出身。他借助乐奇AIUI的低门槛开发能力，仅用两天时间就完成了专属眼镜游戏《陀螺战士》的开发创作。该游戏依托眼镜陀螺仪特性，打造头部操控、镜腿触发技能的轻量化专属玩法，彻底摆脱手机APP开发思维桎梏。他表示，YodaOS与AIUI重构了开发者的创作逻辑，让设计师、艺术家、各行业从业者都能将场景创意、生活洞察转化为可落地、可交互的智能应用，真正实现“创意即产品”。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">日本生态合作伙伴FLUX Inc. CTO Edwin Li分享了海外生态布局成果。目前，海外开发者已落地企业身份识别、DJ创意操控、工业智能质检等多元创新项目，覆盖消费娱乐、企业办公、工业生产等多场景。他特别提到，日本开发者并不热衷于做大模型，而是喜欢“精雕细琢”地解决具体问题，“他们不做大做强，做精”——这与祝铭明在采访中观察到的现象一致：日本开发者解决日本口音英语的识别、解决i人社交开场白等细节需求，这些看似微小的创新，反而让产品在本地市场获得了极高的黏性。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">在B端产业赋能层面，Rokid持续打造多行业标准化AI解决方案。依托“AI大模型+AR智能眼镜+数字化工作流”，公司构建了远程协作、AI现场专家、隐患识别三大核心能力。在智慧文旅领域，Rokid推出DCG智慧文旅AI解决方案，打造景区AI室外伴游、博物馆AI室内导览两大标杆场景，通过AI智能线路规划、实时景点讲解、个性化问答、精准商业引流，破解游客“看不懂、不会玩、找不着”的痛点。依托开放生态能力，Rokid已与支付宝、微信、高德、京东科技、京东健康等头部平台达成深度合作，落地眼镜微信扫一扫支付、一键打车、城市伴游、一眼购药、单车解锁、停车缴费等生活化便捷功能。</span></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">产品矩阵与未来预判：头盔、AR设备与无障碍实践</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">活动现场，Rokid还展示了多款硬件新品与行业解决方案。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">首款可完美适配智能AI眼镜的专业机车头盔正式亮相，基于亚洲人头型数据库量身开模打造，已通过ECE、CCC、DOT三大权威国际安全认证。头盔与乐奇AI智能眼镜结合，可实现4K循环骑行录像、高德骑行导航、多人组队对讲、头盔模式下AI语音对话等核心功能，计划于今年第四季度正式发售。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">此外，新一代AR空间计算设备也同步亮相，搭载骁龙至尊空间计算平台与第三代Oryon CPU，支持6DoF空间定位、58°超大FOV视野，依托4D高斯空间重建技术，可广泛应用于智慧文旅、AR游戏、工业辅助、在线教育等多元场景。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">在无障碍公益领域，Rokid落地专属解决方案，助力视障用户感知世界、听障用户实时识音，相关产品已纳入浙江、四川、云南等多地残联辅具补贴目录。祝铭明在采访中坦言，无障碍业务在Rokid战略中占据特殊位置，“如果有一群人会成为真正的Daily Use用户，最有可能出现的第一个人群就是无障碍人群，对他们来讲这是刚需”。他透露，卖烧烤的听障人士如今已离不开这款眼镜，而视障辅助是他个人最想突破的方向——“我是希望有一天戴着我们的眼镜就可以把盲杖扔了”。</span></p><p style=\"text-align: center; margin-bottom: 20px; line-height: 1.75em;\"><img src=\"https://static.leiphone.com/uploads/new/images/20260627/6a3f465313dbe.jpg?imageView2/2/w/740\" /></p><h3 style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">结语：发令枪未响，但跑道已现</span></h3><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">对于行业发展的阶段判断，祝铭明在采访中给出了一个形象的比喻：“现在的智能眼镜行业特别像iPhone 1之前的BlackBerry时代——比赛还没开始，但门已经打开了。”他认为，真正的起跑标志，是出现一个“针对AI眼镜独有体验的Killer APP”，就像当年切水果游戏定义了触屏时代一样。他判断，起跑时间“明年有机会”。</span></p><p style=\"text-align: left; margin-bottom: 20px; line-height: 1.75em;\"><span style=\"font-size: 14px;\">而在那之前，Rokid选择先通过YodaOS完成底层基础设施的搭建，以“开放”为旗帜，连接开发者、用户与产业伙伴。本次大会首发AIOS概念、落地YodaOS操作系统、完善软硬件生态与全场景解决方案，某种意义上补齐了智能眼镜行业长期缺失的底层系统短板。至于能否从“BlackBerry时代”跨越到“iPhone时代”，则取决于技术迭代、生态沉淀与用户习惯的共同演进——而这正是Rokid与整个行业正在共同书写的答案。</span></p>",
+      "link": "https://www.leiphone.com/category/weiwu/k5oKITJv8cfsQwm2.html",
+      "source": "雷锋网",
+      "published": "Sat, 27 Jun 2026 11:44:00 +0800",
       "category": "AI通用",
-      "quality_score": 4,
-      "collected_at": "2026-06-27T04:54:40.650115"
-    },
-    {
-      "title": "Claude Fable 5分批重新上线！GPT-5.6秒跟",
-      "summary": "这不能是营销计划的一部分吧？",
-      "raw_summary": "这不能是营销计划的一部分吧？",
-      "link": "https://www.qbitai.com/2026/06/438789.html",
-      "source": "量子位",
-      "published": "Fri, 26 Jun 2026 06:55:20 +0000",
-      "category": "大模型",
-      "quality_score": 5,
-      "collected_at": "2026-06-27T04:54:40.650119"
+      "quality_score": 3,
+      "collected_at": "2026-06-28T05:18:11.362875"
     },
     {
       "title": "打造AI轻办公神器 vivo X Fold6折叠旗舰新品正式发布",
@@ -55,24 +55,12 @@
       "published": "Sat, 27 Jun 2026 10:38:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-06-27T04:54:40.650125"
-    },
-    {
-      "title": "全网疯抢体脂秤背后，阿福找到了健康AI的正确打开方式",
-      "summary": "“一代人有一代人的鸡蛋要领”，这次轮到了体脂秤。6月25日，蚂蚁阿福发起的“科学减重1亿斤”健康行动正式上线，同时向全网发放“骨折价体脂秤”。除了9.9元快递费，网友只需1分钱就能领到手，参与科学减重。社交平台上，晒单和讨论同步发酵，抢到的人晒出订单截图，纷纷表示“已下单”“等发货”“真香”；没抢到的在评论区急得团团转，追问领取方式，反复确认阿福真的给出了“地板价”。据蚂蚁阿福旗舰店数据显示，这款AI体脂秤上线24小时，领取量已经超过30万台。雷峰网记者在阿福APP实测发现，为了让体脂秤送到真正需要的用户手中，在阿福App下单需先支付30.01元，收到秤后绑定并完成AI解读，就可获得30元返现，相当于体脂秤到手只要1分钱。一台体脂秤为何引发“全网疯抢”热潮？背后折射的，恰恰是普通人长期被健康管理困住的真实焦虑。1分钱领体脂秤，阿福把体重管理的门槛打下来体重管理的第一步，是了解自己的身体状况。但现实是，很多人只知道体重，却不了解体脂率、肌肉量、骨密度等基础的体重管理概念。大多数时候只能凭感觉，毫无依据地开始节食或是突击运动，没过几天又“放弃抵抗”，循环往复。阿福的第一步，就是把体重管理的",
-      "raw_summary": "<p>“一代人有一代人的鸡蛋要领”，这次轮到了体脂秤。</p><p>6月25日，蚂蚁阿福发起的“科学减重1亿斤”健康行动正式上线，同时向全网发放“骨折价体脂秤”。除了9.9元快递费，网友只需1分钱就能领到手，参与科学减重。</p><p>社交平台上，晒单和讨论同步发酵，抢到的人晒出订单截图，纷纷表示“已下单”“等发货”“真香”；没抢到的在评论区急得团团转，追问领取方式，反复确认阿福真的给出了“地板价”。</p><p><img border=\"0\" src=\"https://static.leiphone.com/uploads/new/images/20260626//6a3e277585a90.jpg?imageMogr2/quality/90\" /></p><p>据蚂蚁阿福旗舰店数据显示，这款AI体脂秤上线24小时，领取量已经超过30万台。</p><p>雷峰网记者在阿福APP实测发现，为了让体脂秤送到真正需要的用户手中，在阿福App下单需先支付30.01元，收到秤后绑定并完成AI解读，就可获得30元返现，相当于体脂秤到手只要1分钱。</p><p>一台体脂秤为何引发“全网疯抢”热潮？背后折射的，恰恰是普通人长期被健康管理困住的真实焦虑。</p><h2>1分钱领体脂秤，阿福把体重管理的门槛打下来</h2><p>体重管理的第一步，是了解自己的身体状况。</p><p>但现实是，很多人只知道体重，却不了解体脂率、肌肉量、骨密度等基础的体重管理概念。大多数时候只能凭感觉，毫无依据地开始节食或是突击运动，没过几天又“放弃抵抗”，循环往复。</p><p>阿福的第一步，就是把体重管理的基础工具——体脂秤的门槛打下来。</p><p>此次阿福提供的“骨折价”AI体脂秤，支持测量体重、BMI、体脂率、内脏脂肪、肌肉量等18项身体数据。用户在阿福APP绑定体脂秤后，在阿福首页“我的健康”以及阿福“健康档案”，就可随时查看健康数据，并清楚显示指标属于标准还是偏低、偏高。这些数据维度合在一起，让用户对身体状况的了解能够更加全面，进而体重管理更加科学。</p><p><img border=\"0\" src=\"https://static.leiphone.com/uploads/new/images/20260626//6a3e27758ca24.jpg?imageMogr2/quality/90\" /></p><p>此外，阿福也支持接入手机、运动手表和血氧仪等多种类健康硬件。用户已有的体脂秤、手环、血糖仪、运动手表，数据都可以同步到阿福APP。AI不再凭一个体重数字猜测身体，可以进一步基于多维数据给出贴合现状的分析和方案；用户也减少了在多个硬件APP和AI对话框来回切换的麻烦。</p><p>阿福的第二步，是将高门槛的专业健康管理服务变得普惠。</p><p>体重管理需要个性化方案，因人而异。同样的卡路里缺口，肌肉量高的人和内脏脂肪高的人，饮食结构和运动类型应当完全不同。但能够提供这种方案的私教和营养师，价格动辄数千元，普通人没有时间也承担不起。</p><p>阿福用AI填上了这道鸿沟。它的医疗大模型由顶尖医生参与共建。用户绑定设备后，各项健康信息整合在同一界面，AI基于体脂率、肌肉量、血糖趋势、睡眠质量等完整图景，动态制定饮食方案和运动方案，并且全程跟踪、持续反馈。</p><p>原本需要花大价钱才能获得的健康私教和营养师服务，变成了普通人随时可用的日常健康陪伴。</p><p>许多人并非不懂少吃多动的道理，是熬夜之后提不起劲去运动，疲惫时更难抵抗高热量食物的诱惑。当测量、解读、行动被收拢在同一条路径里，链条一顺，阻力就小了很多。</p><h2>中美健康AI不同路径选择</h2><p>将目光投向全球，细看海内外健康管理玩家的不同路径。</p><p>美国的垂类健康应用的Noom、MyFitnessPal的用户规模在千万至亿级。但它们的模式依赖手动输入食物和运动数据，订阅费用也不低，例如Noom年费约为150到200美元，背后仍是人工教练加课程内容的组合，AI能力相对薄弱。</p><p>谷歌本月刚推出的Fitbit Air，硬件加上配套AI健康教练包年服务，也需花费近200美元。根据公开测评，AI个性化建议依赖用户花数小时手动完善健康档案，否则仍是通用常识，且存在数据偶发不同步的问题。</p><p><img border=\"0\" src=\"https://static.leiphone.com/uploads/new/images/20260626//6a3e27758f2c7.jpg?imageMogr2/quality/90\" /></p><p>相比于海外市场健康玩家的路线，国内市场以蚂蚁阿福为代表，走出了一条全民化和普惠化的AI健康管理道路。</p><p>阿福的“科学减重1亿斤”行动，通过提供“骨折价”体脂秤，让AI长出“手脚”，帮助普通人完成从“数据-解读-行动”的减重闭环，同时它以开放生态打破“健康”数据孤岛，用户只需要一个AI应用就能全面掌握身体情况。</p><p>目前阿福已服务超过1亿用户，其中55%来自三线及以下城市——恰恰是那些最缺乏专业健康资源、最需要普惠方案的人群。它以近乎零的边际成本让健康管理服务从精英消费变成了普通人随时可及的日常陪伴。</p><p>从日常，高频的体重管理切入，阿福走出了一条健康AI的靠谱路径。“1亿斤”这个数字听起来宏大，拆到每个人，不过是每天少喝一杯奶茶、多走几步路的微小改变。而这些微小行动，正是健康管理走向普惠的真正注脚。</p><p>当专业健康管理工具和服务不再是少数人的奢侈品，全民健康的时代将加速到来。</p>",
-      "link": "https://www.leiphone.com/category/healthai/TzDqHHO6ZgMXs0is.html",
-      "source": "雷锋网",
-      "published": "Fri, 26 Jun 2026 16:33:00 +0800",
-      "category": "医疗健康",
-      "quality_score": 3,
-      "collected_at": "2026-06-27T04:54:40.650130"
+      "collected_at": "2026-06-28T05:18:11.362880"
     }
   ],
   "categories": {
     "芯片硬件": 1,
-    "大模型": 2,
-    "AI通用": 2,
-    "医疗健康": 1
+    "AI通用": 3,
+    "大模型": 1
   }
 }
