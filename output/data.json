@@ -1,50 +1,28 @@
 {
-  "last_updated": "2026-08-08T02:54:30.346756",
-  "news_count": 7,
+  "last_updated": "2026-08-09T03:02:25.770615",
+  "news_count": 5,
   "news": [
     {
-      "title": "阿里推出国内首个AI语音平台CosyVoice Studio，将语义理解融入语音能力",
-      "summary": "AI语音“听、说、创”一站式满足",
-      "raw_summary": "AI语音“听、说、创”一站式满足",
-      "link": "https://www.qbitai.com/2026/08/468324.html",
+      "title": "奥特曼的ChatGPT育儿大法，捅了马蜂窝",
+      "summary": "这就有些尴尬了。",
+      "raw_summary": "这就有些尴尬了。",
+      "link": "https://www.qbitai.com/2026/08/468631.html",
       "source": "量子位",
-      "published": "Fri, 07 Aug 2026 07:43:06 +0000",
-      "category": "AI通用",
-      "quality_score": 4,
-      "collected_at": "2026-08-08T02:54:30.345718"
-    },
-    {
-      "title": "AI批量轰炸苹果bug赏金计划，审核团队已下线",
-      "summary": "",
-      "raw_summary": "",
-      "link": "https://www.qbitai.com/2026/08/466738.html",
-      "source": "量子位",
-      "published": "Fri, 07 Aug 2026 06:21:05 +0000",
-      "category": "AI通用",
-      "quality_score": 4,
-      "collected_at": "2026-08-08T02:54:30.345734"
-    },
-    {
-      "title": "AI圈功能狂卷，付费寥寥，Keep正在试一条新路",
-      "summary": "AI卷向运动赛道，Keep的新答卷能否跑通？",
-      "raw_summary": "AI卷向运动赛道，Keep的新答卷能否跑通？",
-      "link": "https://www.qbitai.com/2026/08/467878.html",
-      "source": "量子位",
-      "published": "Fri, 07 Aug 2026 05:30:08 +0000",
-      "category": "AI通用",
-      "quality_score": 4,
-      "collected_at": "2026-08-08T02:54:30.345740"
-    },
-    {
-      "title": "阿里视频大模型Wan3.0开启公测：文档、ppt也能变视频",
-      "summary": "8月6日，阿里巴巴视频生成大模型Wan 3.0开启公测",
-      "raw_summary": "8月6日，阿里巴巴视频生成大模型Wan 3.0开启公测",
-      "link": "https://www.qbitai.com/2026/08/467877.html",
-      "source": "量子位",
-      "published": "Fri, 07 Aug 2026 03:23:54 +0000",
+      "published": "Sat, 08 Aug 2026 07:57:35 +0000",
       "category": "大模型",
+      "quality_score": 4,
+      "collected_at": "2026-08-09T03:02:25.769484"
+    },
+    {
+      "title": "谷歌急了：AI核心员工全给我搬回硅谷坐班！",
+      "summary": "再花15亿美元买现成AI编程团队",
+      "raw_summary": "再花15亿美元买现成AI编程团队",
+      "link": "https://www.qbitai.com/2026/08/468398.html",
+      "source": "量子位",
+      "published": "Sat, 08 Aug 2026 02:45:02 +0000",
+      "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-08-08T02:54:30.345745"
+      "collected_at": "2026-08-09T03:02:25.769505"
     },
     {
       "title": "82 篇论文撑起的判断：IJCAI 凭什么是推理、规划、知识的「第一主场」",
@@ -55,7 +33,7 @@
       "published": "Fri, 07 Aug 2026 18:29:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-08-08T02:54:30.345750"
+      "collected_at": "2026-08-09T03:02:25.769511"
     },
     {
       "title": "美团王莆中：将AI融入家庭健康，助力建设“15分钟医疗圈”",
@@ -66,7 +44,7 @@
       "published": "Fri, 07 Aug 2026 18:26:00 +0800",
       "category": "医疗健康",
       "quality_score": 3,
-      "collected_at": "2026-08-08T02:54:30.345754"
+      "collected_at": "2026-08-09T03:02:25.769517"
     },
     {
       "title": "IJCAI 2026 专访：机器人想学会人类动作，还差一座桥 | GAIR Paper 118",
@@ -77,12 +55,12 @@
       "published": "Fri, 07 Aug 2026 14:09:00 +0800",
       "category": "机器人",
       "quality_score": 3,
-      "collected_at": "2026-08-08T02:54:30.345758"
+      "collected_at": "2026-08-09T03:02:25.769521"
     }
   ],
   "categories": {
-    "AI通用": 4,
     "大模型": 1,
+    "AI通用": 2,
     "医疗健康": 1,
     "机器人": 1
   }
