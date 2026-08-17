@@ -1,39 +1,39 @@
 {
-  "last_updated": "2026-08-16T02:20:48.590372",
+  "last_updated": "2026-08-17T02:19:42.063442",
   "news_count": 6,
   "news": [
     {
-      "title": "至知研究院提出大模型可解释性新路线：拆权重，数据成本不到1%",
-      "summary": "理解大模型，无需再训练一个替代网络",
-      "raw_summary": "理解大模型，无需再训练一个替代网络",
-      "link": "https://www.qbitai.com/2026/08/473876.html",
+      "title": "李飞飞最新访谈：AI咋能代替人呢？",
+      "summary": "AI不是替代者，而是个人能力的放大镜",
+      "raw_summary": "AI不是替代者，而是个人能力的放大镜",
+      "link": "https://www.qbitai.com/2026/08/474140.html",
       "source": "量子位",
-      "published": "Sat, 15 Aug 2026 06:42:23 +0000",
-      "category": "大模型",
-      "quality_score": 5,
-      "collected_at": "2026-08-16T02:20:48.589860"
+      "published": "Sun, 16 Aug 2026 10:45:47 +0000",
+      "category": "AI通用",
+      "quality_score": 3,
+      "collected_at": "2026-08-17T02:19:42.063003"
     },
     {
-      "title": "根治AI音乐通病！这家国产音乐模型正面挑战SUNO",
-      "summary": "音潮API限时免费开放",
-      "raw_summary": "音潮API限时免费开放",
-      "link": "https://www.qbitai.com/2026/08/473866.html",
+      "title": "“B站教AI”爆火后，北航90后副教授何静回应一切",
+      "summary": "“错过种一棵树最好的时间”",
+      "raw_summary": "“错过种一棵树最好的时间”",
+      "link": "https://www.qbitai.com/2026/08/474064.html",
       "source": "量子位",
-      "published": "Sat, 15 Aug 2026 06:36:05 +0000",
+      "published": "Sun, 16 Aug 2026 10:36:47 +0000",
+      "category": "AI通用",
+      "quality_score": 5,
+      "collected_at": "2026-08-17T02:19:42.063019"
+    },
+    {
+      "title": "WorkSwarm：引领办公智能体新范式，让AI从一个助手，进化为一支与你并肩作战的团队",
+      "summary": "背后是四项关键能力",
+      "raw_summary": "背后是四项关键能力",
+      "link": "https://www.qbitai.com/2026/08/473972.html",
+      "source": "量子位",
+      "published": "Sun, 16 Aug 2026 05:37:39 +0000",
       "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2026-08-16T02:20:48.589879"
-    },
-    {
-      "title": "对话郎咸朋：用机器人创业重做一次“百万智驾量产”",
-      "summary": "1.9万字全文实录",
-      "raw_summary": "1.9万字全文实录",
-      "link": "https://www.qbitai.com/2026/08/473407.html",
-      "source": "量子位",
-      "published": "Sat, 15 Aug 2026 04:21:09 +0000",
-      "category": "机器人",
-      "quality_score": 5,
-      "collected_at": "2026-08-16T02:20:48.589884"
+      "collected_at": "2026-08-17T02:19:42.063024"
     },
     {
       "title": "鹿明发布MOS2：全球首个双臂负载50kg轮臂式机器人，加速AI Worker进入产业现场",
@@ -44,7 +44,7 @@
       "published": "Sat, 15 Aug 2026 12:01:00 +0800",
       "category": "机器人",
       "quality_score": 3,
-      "collected_at": "2026-08-16T02:20:48.589889"
+      "collected_at": "2026-08-17T02:19:42.063029"
     },
     {
       "title": "限量手办 + 实景体验，浙江人行NAVIAI2026WRC 福利提前曝光",
@@ -55,7 +55,7 @@
       "published": "Sat, 15 Aug 2026 09:12:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-08-16T02:20:48.589893"
+      "collected_at": "2026-08-17T02:19:42.063033"
     },
     {
       "title": "阿里开源Qwen3.8，千问大模型全球下载超30亿次",
@@ -66,12 +66,12 @@
       "published": "Fri, 14 Aug 2026 23:08:00 +0800",
       "category": "大模型",
       "quality_score": 3,
-      "collected_at": "2026-08-16T02:20:48.589898"
+      "collected_at": "2026-08-17T02:19:42.063037"
     }
   ],
   "categories": {
-    "大模型": 2,
-    "AI通用": 2,
-    "机器人": 2
+    "AI通用": 4,
+    "机器人": 1,
+    "大模型": 1
   }
 }
