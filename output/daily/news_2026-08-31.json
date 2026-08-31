@@ -1,0 +1,46 @@
+[
+  {
+    "title": "「GPT-6」灰测demo刷屏！周四发布在即",
+    "summary": "核弹爆炸",
+    "raw_summary": "核弹爆炸",
+    "link": "https://www.qbitai.com/2026/08/481893.html",
+    "source": "量子位",
+    "published": "Mon, 31 Aug 2026 04:47:26 +0000",
+    "category": "大模型",
+    "quality_score": 5,
+    "collected_at": "2026-08-31T06:45:10.563339"
+  },
+  {
+    "title": "OpenAI买几万台Mac搞强化训练！英伟达的活被苹果抢了",
+    "summary": "什么样的AI业务，英伟达GPU和谷歌TPU搞不定，非得用Mac",
+    "raw_summary": "什么样的AI业务，英伟达GPU和谷歌TPU搞不定，非得用Mac",
+    "link": "https://www.qbitai.com/2026/08/481759.html",
+    "source": "量子位",
+    "published": "Mon, 31 Aug 2026 03:24:34 +0000",
+    "category": "AI通用",
+    "quality_score": 4,
+    "collected_at": "2026-08-31T06:45:10.563357"
+  },
+  {
+    "title": "全国第三，公司第二，“初创黑马”灵犀智涌用ROSS Harness把机器人送进工业具身智能第一梯队",
+    "summary": "灵犀智涌用一台由Demo级本体组装而成的机器人，成为工业场景赛除行业头部企业外唯一获奖的机器人公司。",
+    "raw_summary": "灵犀智涌用一台由Demo级本体组装而成的机器人，成为工业场景赛除行业头部企业外唯一获奖的机器人公司。",
+    "link": "https://www.qbitai.com/2026/08/481750.html",
+    "source": "量子位",
+    "published": "Mon, 31 Aug 2026 03:11:46 +0000",
+    "category": "机器人",
+    "quality_score": 4,
+    "collected_at": "2026-08-31T06:45:10.563364"
+  },
+  {
+    "title": "AI本地部署不如官方版的元凶找到了：734个依赖包，每一个都可能坑",
+    "summary": "推理软件栈的微小差异，就能改变输出token",
+    "raw_summary": "推理软件栈的微小差异，就能改变输出token",
+    "link": "https://www.qbitai.com/2026/08/481372.html",
+    "source": "量子位",
+    "published": "Sat, 29 Aug 2026 13:11:08 +0000",
+    "category": "AI通用",
+    "quality_score": 5,
+    "collected_at": "2026-08-31T06:45:10.563367"
+  }
+]
