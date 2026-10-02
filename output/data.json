@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-01T06:56:43.757216",
-  "news_count": 5,
+  "last_updated": "2026-10-02T06:46:49.586745",
+  "news_count": 4,
   "news": [
+    {
+      "title": "谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让",
+      "summary": "价格只有Astra一半",
+      "raw_summary": "价格只有Astra一半",
+      "link": "https://www.qbitai.com/2026/10/499663.html",
+      "source": "量子位",
+      "published": "Thu, 01 Oct 2026 15:02:14 +0000",
+      "category": "大模型",
+      "quality_score": 5,
+      "collected_at": "2026-10-02T06:46:49.586082"
+    },
     {
       "title": "OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜",
       "summary": "千禧年难题的突破，10000个Agent最多占了10%的功劳。",
@@ -11,7 +22,7 @@
       "published": "Wed, 30 Sep 2026 14:03:43 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-10-01T06:56:43.756823"
+      "collected_at": "2026-10-02T06:46:49.586155"
     },
     {
       "title": "直播回顾：工业AI的下一个机会在哪？",
@@ -22,29 +33,7 @@
       "published": "Wed, 30 Sep 2026 12:11:24 +0000",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-10-01T06:56:43.756841"
-    },
-    {
-      "title": "Manus 2.0回来了！给AI配手机号和钱包，还能拉群干活",
-      "summary": "给Agent配上手机号，再拉个群",
-      "raw_summary": "给Agent配上手机号，再拉个群",
-      "link": "https://www.qbitai.com/2026/09/499592.html",
-      "source": "量子位",
-      "published": "Wed, 30 Sep 2026 07:58:37 +0000",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-10-01T06:56:43.756845"
-    },
-    {
-      "title": "刚刚，GPT-6 Astra接上宇树G1，把厨房收拾了！",
-      "summary": "让GPT把机器人技能当工具调用",
-      "raw_summary": "让GPT把机器人技能当工具调用",
-      "link": "https://www.qbitai.com/2026/09/499493.html",
-      "source": "量子位",
-      "published": "Wed, 30 Sep 2026 07:54:54 +0000",
-      "category": "大模型",
-      "quality_score": 5,
-      "collected_at": "2026-10-01T06:56:43.756848"
+      "collected_at": "2026-10-02T06:46:49.586165"
     },
     {
       "title": "AI办公进入「上下文战争」，百度如何出牌？",
@@ -55,11 +44,11 @@
       "published": "Wed, 30 Sep 2026 19:50:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-10-01T06:56:43.756859"
+      "collected_at": "2026-10-02T06:46:49.586181"
     }
   ],
   "categories": {
-    "AI通用": 4,
-    "大模型": 1
+    "大模型": 1,
+    "AI通用": 3
   }
 }
