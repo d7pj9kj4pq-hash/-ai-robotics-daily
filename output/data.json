@@ -1,39 +1,28 @@
 {
-  "last_updated": "2026-10-02T06:46:49.586745",
-  "news_count": 4,
+  "last_updated": "2026-10-03T06:07:25.375676",
+  "news_count": 3,
   "news": [
     {
-      "title": "谷歌Gemini 4突然发布！RSI加持，GPT和Opus都让让",
-      "summary": "价格只有Astra一半",
-      "raw_summary": "价格只有Astra一半",
-      "link": "https://www.qbitai.com/2026/10/499663.html",
+      "title": "OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开",
+      "summary": "又咋啦。。。",
+      "raw_summary": "又咋啦。。。",
+      "link": "https://www.qbitai.com/2026/10/501368.html",
       "source": "量子位",
-      "published": "Thu, 01 Oct 2026 15:02:14 +0000",
+      "published": "Sat, 03 Oct 2026 04:41:24 +0000",
+      "category": "AI通用",
+      "quality_score": 4,
+      "collected_at": "2026-10-03T06:07:25.375161"
+    },
+    {
+      "title": "丘成桐新论文致谢了GPT和Claude",
+      "summary": "44年前被亲自列入问题清单",
+      "raw_summary": "44年前被亲自列入问题清单",
+      "link": "https://www.qbitai.com/2026/10/499991.html",
+      "source": "量子位",
+      "published": "Fri, 02 Oct 2026 07:27:03 +0000",
       "category": "大模型",
-      "quality_score": 5,
-      "collected_at": "2026-10-02T06:46:49.586082"
-    },
-    {
-      "title": "OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜",
-      "summary": "千禧年难题的突破，10000个Agent最多占了10%的功劳。",
-      "raw_summary": "千禧年难题的突破，10000个Agent最多占了10%的功劳。",
-      "link": "https://www.qbitai.com/2026/09/499654.html",
-      "source": "量子位",
-      "published": "Wed, 30 Sep 2026 14:03:43 +0000",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-10-02T06:46:49.586155"
-    },
-    {
-      "title": "直播回顾：工业AI的下一个机会在哪？",
-      "summary": "什么样的AI才适合工业现场？企业真正开始做工业AI时，又该从哪里下手？",
-      "raw_summary": "什么样的AI才适合工业现场？企业真正开始做工业AI时，又该从哪里下手？",
-      "link": "https://www.qbitai.com/2026/09/499605.html",
-      "source": "量子位",
-      "published": "Wed, 30 Sep 2026 12:11:24 +0000",
-      "category": "AI通用",
-      "quality_score": 3,
-      "collected_at": "2026-10-02T06:46:49.586165"
+      "quality_score": 4,
+      "collected_at": "2026-10-03T06:07:25.375171"
     },
     {
       "title": "AI办公进入「上下文战争」，百度如何出牌？",
@@ -44,11 +33,11 @@
       "published": "Wed, 30 Sep 2026 19:50:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-10-02T06:46:49.586181"
+      "collected_at": "2026-10-03T06:07:25.375178"
     }
   ],
   "categories": {
-    "大模型": 1,
-    "AI通用": 3
+    "AI通用": 2,
+    "大模型": 1
   }
 }
