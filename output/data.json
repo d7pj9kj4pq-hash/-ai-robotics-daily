@@ -1,39 +1,50 @@
 {
-  "last_updated": "2026-10-06T07:16:09.334105",
-  "news_count": 4,
+  "last_updated": "2026-10-07T06:55:16.445979",
+  "news_count": 5,
   "news": [
     {
-      "title": "限时28天！OpenAI承诺没新功能就重置，网友：只想要Opus",
-      "summary": "有改进就体验，没改进就重置，横竖不亏。",
-      "raw_summary": "有改进就体验，没改进就重置，横竖不亏。",
-      "link": "https://www.qbitai.com/2026/10/501700.html",
+      "title": "OpenAI一夜甩出722篇数学论文！黎曼霍奇BSD全上阵，数学家：读不过来",
+      "summary": "三位菲尔兹奖得主：不代表认可",
+      "raw_summary": "三位菲尔兹奖得主：不代表认可",
+      "link": "https://www.qbitai.com/2026/10/501749.html",
       "source": "量子位",
-      "published": "Mon, 05 Oct 2026 02:50:46 +0000",
+      "published": "Wed, 07 Oct 2026 01:05:13 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-10-06T07:16:09.333577"
+      "collected_at": "2026-10-07T06:55:16.445568"
     },
     {
-      "title": "AI算力硬合作，马斯克还是更相信中国制造",
-      "summary": "一种混搭的可能：英特尔继续供先进工艺，即前端用14A；后端再接台积电，来补工厂运营、良率、封装这些能力。",
-      "raw_summary": "一种混搭的可能：英特尔继续供先进工艺，即前端用14A；后端再接台积电，来补工厂运营、良率、封装这些能力。",
-      "link": "https://www.qbitai.com/2026/10/501605.html",
+      "title": "不er，咋陶哲轩也成AI减速派了？？",
+      "summary": "",
+      "raw_summary": "",
+      "link": "https://www.qbitai.com/2026/10/501736.html",
       "source": "量子位",
-      "published": "Sun, 04 Oct 2026 06:12:22 +0000",
+      "published": "Tue, 06 Oct 2026 07:59:17 +0000",
       "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-10-06T07:16:09.333596"
+      "quality_score": 3,
+      "collected_at": "2026-10-07T06:55:16.445584"
     },
     {
-      "title": "最火AI岗位FDE：月薪5万，都干这些…",
-      "summary": "什么是FDE？它会一直存在吗？",
-      "raw_summary": "什么是FDE？它会一直存在吗？",
-      "link": "https://www.qbitai.com/2026/10/501506.html",
+      "title": "OpenAI「疯狂28天」首日，这都发了些啥啊…",
+      "summary": "",
+      "raw_summary": "",
+      "link": "https://www.qbitai.com/2026/10/501726.html",
       "source": "量子位",
-      "published": "Sun, 04 Oct 2026 06:05:35 +0000",
+      "published": "Tue, 06 Oct 2026 06:45:40 +0000",
       "category": "AI通用",
       "quality_score": 5,
-      "collected_at": "2026-10-06T07:16:09.333600"
+      "collected_at": "2026-10-07T06:55:16.445588"
+    },
+    {
+      "title": "Meshy 跻身 a16z 消费级 AI 应用月收入 Top 50，为榜单唯一 AI 3D 公司",
+      "summary": "在 a16z 首份消费级 AI 应用月收入榜单中，Meshy 位列第 31 名，与 OpenAI、Anthropic、Canva、Superhuman、Higgsfield 等共同上榜加州硅谷，2026 年 10 月 5 日 —— 全球领先的 AI 3D 多模态模型公司 Meshy 今日宣布，公司入选由硅谷风险投资机构 Andreessen Horowitz（a16z）发布的“消费级 AI 应用月收入Top 50”榜单。Meshy 位列第 31 名，是榜单上唯一一家 AI 3D 公司，与 OpenAI、Anthropic、Canva、Superhuman、Higgsfield 等企业共同上榜。a16z 在报告中指出，收入榜单上多款头部创意类产品均建立在自研模型之上；即便通用模型在图像和视频生成方面不断进步，消费者仍持续为专业化创意工具付费。Meshy 自主研发面向 3D 生成的多模态模型，此次上榜标志着 AI 3D 已经和语言、图像、视频、音乐一样，成为一个独立的付费品类。“很荣幸 Meshy 成为该榜单上唯一的 AI 3D 公司，这说明 3D 已经成为用户愿意付费的品类。”Meshy",
+      "raw_summary": "<p style=\"text-align: left; margin-top: 0pt; margin-bottom: 16.1pt;\"><br /></p><p style=\"text-align: left; margin-top: 0pt;\">在 <span style=\"font-family: 'PingFang SC Semibold';\">a16z </span><span style=\"font-family: 'PingFang SC Semibold';\">首份消费级 </span><span style=\"font-family: 'PingFang SC Semibold';\">AI </span><span style=\"font-family: 'PingFang SC Semibold';\">应用月收入榜单中，</span><span style=\"font-family: 'PingFang SC Semibold';\">Meshy </span><span style=\"font-family: 'PingFang SC Semibold';\">位列第 </span><span style=\"font-family: 'PingFang SC Semibold';\">31 </span><span style=\"font-family: 'PingFang SC Semibold';\">名，与 </span><span style=\"font-family: 'PingFang SC Semibold';\">OpenAI</span><span style=\"font-family: 'PingFang SC Semibold';\">、</span><span style=\"font-family: 'PingFang SC Semibold';\">Anthropic</span><span style=\"font-family: 'PingFang SC Semibold';\">、</span><span style=\"font-family: 'PingFang SC Semibold';\">Canva</span><span style=\"font-family: 'PingFang SC Semibold';\">、</span><span style=\"font-family: 'PingFang SC Semibold';\">Superhuman</span><span style=\"font-family: 'PingFang SC Semibold';\">、</span><span style=\"font-family: 'PingFang SC Semibold';\">Higgsfield </span><span style=\"font-family: 'PingFang SC Semibold';\">等共同上榜</span></p><p style=\"text-align: left; margin-top: 0pt;\"><span style=\"font-family: 'PingFang SC Regular';\">加州硅谷，</span>2026 <span style=\"font-family: 'PingFang SC Regular';\">年 </span>10 <span style=\"font-family: 'PingFang SC Regular';\">月 </span>5 <span style=\"font-family: 'PingFang SC Regular';\">日 </span>—— <span style=\"font-family: 'PingFang SC Regular';\">全球领先的 </span>AI 3D <span style=\"font-family: 'PingFang SC Regular';\">多模态模型公司 </span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">今日宣布，公司入选由硅谷风险投资机构 </span>Andreessen Horowitz<span style=\"font-family: 'PingFang SC Regular';\">（</span>a16z<span style=\"font-family: 'PingFang SC Regular';\">）发布的</span>“<span style=\"font-family: 'PingFang SC Regular';\">消费级 </span>AI <span style=\"font-family: 'PingFang SC Regular';\">应用月收入</span>Top 50”<span style=\"font-family: 'PingFang SC Regular';\">榜单。</span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">位列第 </span>31 <span style=\"font-family: 'PingFang SC Regular';\">名，是榜单上唯一一家 </span>AI 3D <span style=\"font-family: 'PingFang SC Regular';\">公司，与 </span>OpenAI<span style=\"font-family: 'PingFang SC Regular';\">、</span>Anthropic<span style=\"font-family: 'PingFang SC Regular';\">、</span>Canva<span style=\"font-family: 'PingFang SC Regular';\">、</span>Superhuman<span style=\"font-family: 'PingFang SC Regular';\">、</span>Higgsfield <span style=\"font-family: 'PingFang SC Regular';\">等企业共同上榜。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; text-align: center;\"><img border=\"0\" src=\"https://static.leiphone.com/uploads/new/images/20261007//6ac5c759057e2.jpg?imageMogr2/quality/90\" /></p><p style=\"text-align: left; margin-top: 0pt;\">a16z <span style=\"font-family: 'PingFang SC Regular';\">在报告中指出，收入榜单上多款头部创意类产品均建立在自研模型之上；即便通用模型在图像和视频生成方面不断进步，消费者仍持续为专业化创意工具付费。</span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">自主研发面向 </span>3D <span style=\"font-family: 'PingFang SC Regular';\">生成的多模态模型，此次上榜标志着 </span>AI 3D <span style=\"font-family: 'PingFang SC Regular';\">已经和语言、图像、视频、音乐一样，成为一个独立的付费品类。</span></p><p style=\"text-align: left; margin-top: 0pt;\">“<span style=\"font-family: 'PingFang SC Regular';\">很荣幸 </span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">成为该榜单上唯一的 </span>AI 3D <span style=\"font-family: 'PingFang SC Regular';\">公司，这说明 </span>3D <span style=\"font-family: 'PingFang SC Regular';\">已经成为用户愿意付费的品类。</span>”Meshy <span style=\"font-family: 'PingFang SC Regular';\">增长副总裁潘菲表示，</span>“<span style=\"font-family: 'PingFang SC Regular';\">每天，都有大量艺术家、工作室和创作者借助 </span>Meshy<span style=\"font-family: 'PingFang SC Regular';\">，在几分钟内把创意变成 </span>3D <span style=\"font-family: 'PingFang SC Regular';\">作品。我们相信，</span>3D <span style=\"font-family: 'PingFang SC Regular';\">将是下一个伟大的创作媒介，而我们的使命，就是让每个人都能轻松用 </span>3D <span style=\"font-family: 'PingFang SC Regular';\">进行创作。</span>”</p><p style=\"text-align: left; margin-top: 0pt;\"><span style=\"font-family: 'PingFang SC Regular';\">此次入选，是 </span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">一段快速增长期的缩影。公司近期宣布，其年度经常性收入（</span>ARR<span style=\"font-family: 'PingFang SC Regular';\">）已突破 </span>1 <span style=\"font-family: 'PingFang SC Regular';\">亿美元；</span>2026 <span style=\"font-family: 'PingFang SC Regular';\">年 </span>7 <span style=\"font-family: 'PingFang SC Regular';\">月，公司完成近 </span>4 <span style=\"font-family: 'PingFang SC Regular';\">亿美元 </span>B <span style=\"font-family: 'PingFang SC Regular';\">轮融资，投后估值超 </span>100 <span style=\"font-family: 'PingFang SC Regular';\">亿元。</span></p><p>&nbsp;</p><p style=\"margin-top: 0pt;\"><span style=\"font-family: 'PingFang SC Regular';\">关于</span><span style=\"font-family: 'PingFang SC Semibold';\"> Meshy</span></p><p style=\"margin-top: 0pt;\">Meshy <span style=\"font-family: 'PingFang SC Regular';\">构建用于</span> AI <span style=\"font-family: 'PingFang SC Regular';\">驱动</span> 3D <span style=\"font-family: 'PingFang SC Regular';\">生成的多模态基础模型，将文本和图像转化为可用于游戏、电影和</span> 3D <span style=\"font-family: 'PingFang SC Regular';\">打印的生产级</span> 3D <span style=\"font-family: 'PingFang SC Regular';\">资产。</span>Meshy <span style=\"font-family: 'PingFang SC Regular';\">由拥有麻省理工学院博士学位的胡渊鸣（</span>Ethan Hu <span style=\"font-family: 'PingFang SC Regular';\">）创立，目前在全球拥有超过</span> 1500 <span style=\"font-family: 'PingFang SC Regular';\">万注册用户。</span>2026 <span style=\"font-family: 'PingFang SC Regular';\">年 </span>7 <span style=\"font-family: 'PingFang SC Regular';\">月，该公司完成了近</span> 4 <span style=\"font-family: 'PingFang SC Regular';\">亿美元的</span> B <span style=\"font-family: 'PingFang SC Regular';\">轮融资，估值达</span> 15 <span style=\"font-family: 'PingFang SC Regular';\">亿美元，这是迄今为止</span> AI 3D <span style=\"font-family: 'PingFang SC Regular';\">领域最大的融资轮次。了解更多信息，请访问</span> meshy.ai<span style=\"font-family: 'PingFang SC Regular';\">。</span></p>",
+      "link": "https://www.leiphone.com/category/industrynews/ZKXlV8iIwXaBOpzO.html",
+      "source": "雷锋网",
+      "published": "Wed, 07 Oct 2026 12:19:00 +0800",
+      "category": "AI通用",
+      "quality_score": 3,
+      "collected_at": "2026-10-07T06:55:16.445593"
     },
     {
       "title": "再创佳绩！爱奇艺《灵魂摆渡》“浮生梦”系列AIGC网络故事片分账票房破千万",
@@ -44,10 +55,10 @@
       "published": "Sat, 03 Oct 2026 18:12:00 +0800",
       "category": "AI通用",
       "quality_score": 3,
-      "collected_at": "2026-10-06T07:16:09.333606"
+      "collected_at": "2026-10-07T06:55:16.445597"
     }
   ],
   "categories": {
-    "AI通用": 4
+    "AI通用": 5
   }
 }
