@@ -1,42 +1,43 @@
 {
-  "last_updated": "2026-10-13T07:26:07.099349",
+  "last_updated": "2026-10-14T05:53:35.773599",
   "news_count": 3,
   "news": [
     {
-      "title": "华为AI靠RSI通关25款游戏！操作次数比人类少56%",
-      "summary": "游戏打到21:0，AI甚至不用再调用大模型了",
-      "raw_summary": "游戏打到21:0，AI甚至不用再调用大模型了",
-      "link": "https://www.qbitai.com/2026/10/502654.html",
+      "title": "国内最年轻AI教授创业：要让世界模型走向全身全模态",
+      "summary": "给Ego补上缺失的交互信息",
+      "raw_summary": "给Ego补上缺失的交互信息",
+      "link": "https://www.qbitai.com/2026/10/503172.html",
       "source": "量子位",
-      "published": "Mon, 12 Oct 2026 05:48:36 +0000",
-      "category": "AI通用",
-      "quality_score": 5,
-      "collected_at": "2026-10-13T07:26:07.098888"
-    },
-    {
-      "title": "用不着Ctrl+F了！全新AI论文工具，帮你在原文献里海里捞针",
-      "summary": "一套生成论文初稿的多智能体工作流",
-      "raw_summary": "一套生成论文初稿的多智能体工作流",
-      "link": "https://www.qbitai.com/2026/10/502644.html",
-      "source": "量子位",
-      "published": "Sun, 11 Oct 2026 09:04:31 +0000",
+      "published": "Wed, 14 Oct 2026 04:51:32 +0000",
       "category": "AI通用",
       "quality_score": 4,
-      "collected_at": "2026-10-13T07:26:07.098904"
+      "collected_at": "2026-10-14T05:53:35.773068"
     },
     {
-      "title": "1688全面接入AI电商工作台Accio",
-      "summary": "10月13日，阿里旗下数字供应链平台1688宣布，即日起，平台逾1亿年度活跃买家和超100万源头厂商，均可直接开通全球电商AI工作台Accio。接入Accio后，买家不仅能用其完成采购，还能借助“电商管家”智能体运营全网生意；卖家则可通过Accio一站式管理1688店铺。买家直接用1688账号登录Accio即可开通。卖家在Accio下载“1688生意助手”并绑定店铺后即可使用。作为专为B类生意场景打造的智能体，“1688生意助手”直连商家后台，整合了1688平台多年积累的B类经营数据与AI能力。作为面向全球中小企业的经营智能体，Accio意为“召之即来”——说清你想做什么，AI替你去办。和通用AI不同，Accio聚焦于电商、生意领域，覆盖电商经营全链路，包括找货、备货、成交、复购和店铺经营。目前，全球已经有1000万中小企业用户在用Accio做生意。 （Accio工作台中的“1688生意助手”操作界面） 全面接入Accio，双11中小商家进货卖货都能用AI目前1688的买家大多是中小企业甚至“一人公司”，他们以1688为货源地和供应链依托，经营阵地不仅覆盖淘宝、天猫、小红书、拼多多、抖",
-      "raw_summary": "<p>10月13日，阿里旗下数字供应链平台1688宣布，即日起，平台逾1亿年度活跃买家和超100万源头厂商，均可直接开通全球电商AI工作台Accio。</p><p>接入Accio后，买家不仅能用其完成采购，还能借助“电商管家”智能体运营全网生意；卖家则可通过Accio一站式管理1688店铺。</p><p>买家直接用1688账号登录Accio即可开通。卖家在Accio下载“1688生意助手”并绑定店铺后即可使用。作为专为B类生意场景打造的智能体，“1688生意助手”直连商家后台，整合了1688平台多年积累的B类经营数据与AI能力。</p><p>作为面向全球中小企业的经营智能体，Accio意为“召之即来”——说清你想做什么，AI替你去办。和通用AI不同，Accio聚焦于电商、生意领域，覆盖电商经营全链路，包括找货、备货、成交、复购和店铺经营。目前，全球已经有1000万中小企业用户在用Accio做生意。</p><p>&nbsp;</p><p style=\"text-align: center;\"><img src=\"https://static.leiphone.com/uploads/new/images/20261013/6acd9aed5b2f7.png?imageView2/2/w/740\" />&nbsp;</p><p style=\"text-align: center;\">（Accio工作台中的“1688生意助手”操作界面）</p><p>&nbsp;</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全面接入Accio，双11中小商家进货卖货都能用AI</strong></p><p>目前1688的买家大多是中小企业甚至“一人公司”，他们以1688为货源地和供应链依托，经营阵地不仅覆盖淘宝、天猫、小红书、拼多多、抖音等平台，还广泛延伸至跨境电商和即时零售领域。 </p><p>针对这类“既要全网进货、又要多端卖货”的复合需求，Accio重点推出了两项功能。</p><p>一是“采购助手”，同时覆盖1688和阿里国际站，买家可在全球128个国家和地区找供应商、比价、发询盘；二是“电商管家”，打通淘宝、天猫、抖音、拼多多、京东等国内主流电商平台，让采购与店铺运营在同一个工作台内闭环完成，无需再来回切换。</p><p>值得关注的是，此次1688全面接入Accio正值双11备战期。每逢大促，中小商家每天要应对一连串充满不确定性的决策——哪个广告计划在烧钱？哪个商品可能断货？竞品降价了要不要跟？与此同时，多平台数据“各说各话”，往往等问题汇总出来，最佳处理时机已经过去。此外，大促期间素材需求集中爆发，主图、详情页、海报、短视频要在预热、开门红、高潮、返场各阶段同步更新，团队节奏根本跟不上。</p><p>更难熬的是大促期间那种持续紧绷的状态——老板凌晨还在盯数据，每个人都在等其他岗位的反馈。 </p><p>Accio针对这些痛点逐一给出解法：多平台数据自动汇总，免去繁琐的手动导表；店铺诊断直接输出当天优先行动项；广告分析定位出问题根源，精准判定是产品、计划还是预算问题；商品物料从原图到营销套图一键生成，不用再等设计排期。</p><p>&nbsp;</p><p><strong>上线“1688生意助手”，百万源头工厂用AI管全盘生意</strong></p><p>对源头厂商而言，只需要一句自然语言指令，“1688生意助手”就能自主执行全套经营动作——从洞察热卖趋势、智能发图上架、广告分析、意向客户接待，到多店管理与经营决策，全面覆盖工厂做生意的全链路。</p><p>1688商家的生意模式差异显著：现货模式（含批发、一件代发和分销）、定制模式（含轻定制、深度定制），以及跨境模式（含内外贸一体、多平台经营），面对的经营难题截然不同。</p><p>为此，Accio针对不同类型商家的核心痛点，量身打造了三项差异化AI能力：</p><p>一是现货型商家主打“快与省”。现货拼的是上新速度和运营效率，Accio既能一键生成完整商品详情并自动上架，还能批量优化商品素材和标题，帮助提升搜索点击和成交转化；</p><p>二是定制型工厂主打“专与准”。定制难在专业接待和询盘转化，Accio既能学习企业知识库，听懂定制需求，答准工艺、交期和报价等专业问题，还能通过买家背调挖掘需求，7×24小时自动跟进每一条潜在商机；</p><p>三是跨境型商家主打“全与透”。跨境难在多店管理和经营决策，Accio直连多平台数据，每日推送多店铺经营看板，哪里赚了、哪里亏了、资源优先投在哪，让老板看清全盘生意，快速做出决策。</p><p><br /></p>",
-      "link": "https://www.leiphone.com/category/industrynews/geJK2UpprDrFwEMI.html",
-      "source": "雷锋网",
-      "published": "Tue, 13 Oct 2026 10:44:00 +0800",
+      "title": "响应速度比Claude Code快3倍，实现真正无限上下文！APUS AI开源Reflex Agent",
+      "summary": "10月13日，APUS AI（麒麟合盛网络技术股份有限公司）宣布开源Personal Agent产品Reflex Agent",
+      "raw_summary": "10月13日，APUS AI（麒麟合盛网络技术股份有限公司）宣布开源Personal Agent产品Reflex Agent",
+      "link": "https://www.qbitai.com/2026/10/503165.html",
+      "source": "量子位",
+      "published": "Wed, 14 Oct 2026 03:32:48 +0000",
       "category": "AI通用",
+      "quality_score": 4,
+      "collected_at": "2026-10-14T05:53:35.773089"
+    },
+    {
+      "title": "独家丨字节最早天使投资人，投了一家 AI 音乐硬件公司",
+      "summary": "SUAVE 目前已有 demo，产品计划 2027 年初上市。作者丨黄艳冰编辑丨董子博雷峰网·鲸犀独家获悉，AI 音乐生成创作硬件公司 SUAVE 已完成千万级种子轮融资，投资方为海纳无限（HINA），资金将主要用于量产机型的软硬件研发。据了解，海纳无限是由海纳亚洲中国团队设立的人民币基金，此次投资 SUAVE， 是其在国内市场的首笔投资。作为全球知名投资机构，海纳亚洲是字节跳动天使轮唯一的机构投资方，至今仍是其最大的投资方股东。海纳亚洲还在早期领投了短视频平台 Musical.ly，后者被字节收购后改名 TikTok。当前 SUAVE 团队已组建完毕，成员背景涵盖字节跳动、华为鸿蒙、百度等大厂。创始人 Felix 兼具工科与音乐跨学科背景，是中国第一批智能硬件创业者：2012 年即提出“智能钢琴”构想，远早于中国第一波智能硬件创业热潮；2014 年其主导的发光提示的智能钢琴和智能吉他项目获得腾讯联合创始人曾李青的投资。此后，Felix 先后在珠江钢琴、字节跳动和作业帮任职，在字节期间隶属原锤子（坚果）团队，参与过 AI 录音卡片、机器狗智能宠物、通用机器人等项目的内部立项。SUAVE",
+      "raw_summary": "<section style=\"margin-bottom: 16px;\"><span><img alt=\"图片\" class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/6a6c4981e5bcb.jpg?imageMogr2/quality/90\" /></span></section><section style=\"margin: 0px; padding: 0px; letter-spacing: 0.544px;\"><section><section><section style=\"margin: 3px auto 0px; padding: 0px; width: 482.156px; background-color: rgb(244, 244, 244);\"><section style=\"margin: 0px; padding: 0px; clear: both; text-align: center;\"><img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20261013/6acdf74d71a88.png?imageMogr2/quality/90\" style=\"margin: 0px; padding: 0px; vertical-align: bottom; width: 100%; background-color: transparent;\" /></section><section style=\"margin: 0px 0px 24px; padding: 0px; text-align: left; line-height: 1.6em;\"><section style=\"padding: 0px; display: inline-block;\"><section style=\"margin: 0px 0px 24px; padding: 0px; text-align: justify;\"><strong style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; letter-spacing: 0px;\"><span style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; color: #DB3F14; font-size: 15px;\"><span><span style=\"color: #4499E7;\">SUAVE 目前已有 demo，产品计划 2027 年初上市。</span></span></span></strong></section><p style=\"margin: 24px 0px 0px; padding: 0px; clear: both; color: rgb(51, 51, 51);\"><span style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px; font-size: 14px; color: #B2B2B2;\"><span style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px;\"><span style=\"color: #888888;\">作者丨</span></span><span><span style=\"color: #888888;\">黄艳冰</span></span><span><br /></span></span></p><section style=\"margin: 0px; padding: 0px; color: rgb(51, 51, 51);\"><span style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 14px; color: #B2B2B2;\"><span style=\"margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px;\"><span style=\"color: #888888;\">编辑丨董子博</span></span><span><br /></span></span></section></section></section><section style=\"margin: 0px; padding: 0px; color: rgb(70, 70, 72); font-size: 18px;\"><section style=\"margin: 0px; padding: 0px; width: 482.145px; display: inline-block;\"><span style=\"margin: 0px; padding: 0px; display: inline-block; width: 482.145px;\"><span style=\"margin: 0px; padding: 0px;\"><br /></span></span></section></section></section></section></section></section><section><section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em; margin-top: 24px;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">雷峰网·鲸犀独家获悉，</span><span style=\"letter-spacing: 0.5px; font-weight: bold;\">AI 音乐生成创作硬件公司 SUAVE 已完成千万级种子轮融资，投资方为海纳无限（HINA），资金将主要用于量产机型的软硬件研发</span></span><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px; font-weight: bold;\">。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">据了解，海纳无限是由海纳亚洲中国团队设立的人民币基金，此次投资 SUAVE， 是其在国内市场的首笔投资。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">作为全球知名投资机构，</span></span><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">海纳亚洲是字节跳动天使轮唯一的机构投资方，</span></span></strong><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">至今仍是其最大的投资方股</span></span><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">东</span></span></strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">。海纳亚洲还在早期领投了短视频平台 Musical.ly，后者被字节收购后改名 TikTok。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">当前 SUAVE 团队已组建完毕，成员背景涵盖字节跳动、华为鸿蒙、百度等大厂</span></span></strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">。创始人 Felix 兼具工科与音乐跨学科背景，是中国第一批智能硬件创业者：2012 年即提出“智能钢琴”构想，远早于中国第一波智能硬件创业热潮；2014 年其主导的发光提示的智能钢琴和智能吉他项目获得腾讯联合创始人曾李青的投资。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">此后，Felix 先后在珠江钢琴、字节跳动和作业帮任职，在字节期间隶属原锤子（坚果）团队，参与过 AI 录音卡片、机器狗智能宠物、通用机器人等项目的内部立项。</span></span></section></section><span><section><section style=\"text-align: center;\"><img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20261013/6acdf74ddcfca.png?imageMogr2/quality/90\" type=\"block\" /></section><section style=\"text-align: center; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 12px;\"><span style=\"letter-spacing: 0.5px; color: #888888;\">SUAVE 创始团队</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">SUAVE 的核心产品是一台 AI 音乐主机</span></span></strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">——搭配不同配件，可组合成吉他、键盘、碟机、电吹管等形态，覆盖弹拨、键盘、打击、吹奏和跳舞等场景。团队将这套架构定义为“1+N+X”创作系统：主机是统一的大脑，配件是表达的入口，软件持续增加玩法。设计思路类似任天堂 Switch 的理念，通过固定主机底座、依靠配件与软件迭代丰富场景。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">目前，</span></span><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">SUAVE 计划先推出吉他形态，主机搭配一个核心配件售价预计不到 5000 元，目前已有产品 demo，计划 2027 年初上市</span></span></strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">。产品核心竞争力之一体现在供应链上，同行若想复制整套整合方案，仅供应链就需至少两年。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">商业模式上，SUAVE 计划以硬件销售为入口，通过软件订阅、音色包和付费应用拓展收入，并建立仅向主机用户开放的作品社区，支持作品分享与二次创作，探索社区和创作者经济。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">目前，SUAVE 已启动首批种子用户招募，初期瞄准 20 至 30 岁左右、有审美与表达欲、愿意为体验买单的音乐爱好者，尤其重视女性用户。</span></span></section><section style=\"text-align: justify; margin-bottom: 24px; line-height: 1.75em;\"><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">SUAVE 产品后续更多进展，雷峰网·鲸犀将持续关注，欢迎添加作者微信&nbsp;</span></span><strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">frenchfries0016</span></span></strong><span style=\"font-size: 15px;\"><span style=\"letter-spacing: 0.5px;\">&nbsp;交流。</span></span></section><section style=\"text-align: center; margin-bottom: 24px; margin-top: 24px;\"><img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20261013/6acdf74e09eaf.jpg?imageMogr2/quality/90\" type=\"block\" /></section><section style=\"text-align: center; margin-top: 24px; margin-bottom: 24px;\"><img class=\"rich_pages wxw-img\" src=\"https://static.leiphone.com/uploads/new/images/20261013/6acdf74e2b4d0.jpg?imageMogr2/quality/90\" type=\"block\" /></section></section></span></section><p style=\"display: none;\"></p>",
+      "link": "https://www.leiphone.com/category/weiwu/i0pZU5QKhkvoVvig.html",
+      "source": "雷锋网",
+      "published": "Tue, 13 Oct 2026 17:20:00 +0800",
+      "category": "芯片硬件",
       "quality_score": 3,
-      "collected_at": "2026-10-13T07:26:07.098909"
+      "collected_at": "2026-10-14T05:53:35.773098"
     }
   ],
   "categories": {
-    "AI通用": 3
+    "AI通用": 2,
+    "芯片硬件": 1
   }
 }
